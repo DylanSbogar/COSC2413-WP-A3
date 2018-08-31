@@ -36,53 +36,54 @@
       <h1>Products</h1>
       <h2><a name = "trees">Trees</a></h2>
       <div class="gallery">
-        <a target="_blank" href="pineArt.jpg">
-          <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
+        <a target="_blank" href="product.php">
+          <img src="../../media/pineArt.jpg" alt="Artificial Pine Tree" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Artificial Pine Tree (click me)</div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="pineGen.jpg">
-          <img src="5terre.jpg" alt="Genuine Pine Tree" width="300" height="300">
+          <img src="../../media/pineGen.jpg" alt="Genuine Pine Tree" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Genuine Pine Tree</div>
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="pineArt.jpg">
-          <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
+        <a target="_blank" href="firArt.jpg">
+          <img src="../../media/firArt.jpg" alt="Artificial Fir Tree" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Artificial Fir Tree</div>
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="pineArt.jpg">
-          <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
+        <a target="_blank" href="firGen.jpg">
+          <img src="../../media/firGen.jpg" alt="Genuine Fir Tree" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Genuine Fir Tree</div>
       </div>
 
       <h2><a name = "decor">Decorations</a></h2>
+
       <div class="gallery">
-        <a target="_blank" href="pineArt.jpg">
-          <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
+        <a target="_blank" href="treeTopper.jpg">
+          <img src="../../media/treeTopper.jpg" alt="Tree Topper" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Tree Topper</div>
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="pineArt.jpg">
-          <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
+        <a target="_blank" href="wreath.jpg">
+          <img src="../../media/wreath.jpg" alt="Wreath" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Wreath</div>
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="pineArt.jpg">
-          <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
+        <a target="_blank" href="lights.jpg">
+          <img src="../../media/lights.jpg" alt="Lights" width="300" height="300">
         </a>
-        <div class="desc">Artificial Pine Tree</div>
+        <div class="desc">Lights</div>
       </div>
 
       <div class="gallery">
@@ -93,6 +94,7 @@
       </div>
 
       <h2><a name = "misc">Misc.</a></h2>
+
       <div class="gallery">
         <a target="_blank" href="pineArt.jpg">
           <img src="5terre.jpg" alt="Artificial Pine Tree" width="300" height="300">
@@ -126,7 +128,7 @@
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Dylan Sbogar - s3718036</div>
+      </script> Dylan Sbogar - s3718036, Matthew Moloney - s3717566</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>

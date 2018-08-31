@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Artifical Pine Tree</title>
 
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
@@ -18,16 +18,16 @@
 
     <nav>
       <ul>
-        <li><a class="active" href="#">Home</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
         <li class="dropdown">
-            <a href="products.php" class="dropbtn">Products</a>
+            <a href="#" class="dropbtn">Products</a>
             <div class="dropdown-content">
               <a href="products.php#trees">Trees</a>
               <a href="products.php#decor">Decorations</a>
               <a href="products.php#misc">Misc.</a>
             </div>
         </li>
-      <!--  <li style="float:right"><a href="cart.php">Cart (0)</a></li> -->
+      <!--  <li style="float:right"><a href="#cart">Cart (0)</a></li> -->
         <li style="float:right"><a href="login.php">Login</a></li>
       </ul>
     </nav>

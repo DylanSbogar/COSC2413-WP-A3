@@ -13,23 +13,25 @@
   <body>
 
     <header>
-      <div class="center"><img src='../../media/ChristmasOnMain-logo.png' alt='Christmas On Main logo' height='240'></img></div>
+        <div>
+		<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
+		<img src="../../media/ChristmasOnMain-logo.png" alt="Christmas On Main logo" class="center">
+	  </div>
     </header>
 
-    <nav>
-      <ul>
-        <li><a class="active" href="index.php">Home</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn">Products</a>
-            <div class="dropdown-content">
-              <a href="products.php#trees">Trees</a>
-              <a href="products.php#decor">Decorations</a>
-              <a href="products.php#misc">Misc.</a>
-            </div>
-        </li>
-      <!--  <li style="float:right"><a href="#cart">Cart (0)</a></li> -->
-        <li style="float:right"><a href="login.php">Login</a></li>
-      </ul>
+    <nav class="nav">
+	  <ul>
+			<li><a class="active" href="index.php">Home</a></li>
+			<li class="dropdown">
+				<a href="products.php" class="dropbtn">Products</a>
+				<div class="dropdown-content">
+					<a href="products.php#trees">Trees</a>
+					<a href="products.php#decor">Decorations</a>
+					<a href="products.php#elves">Elves</a>
+				</div>
+			</li>
+			<li><a href="#">Login</a></li>
+		</ul>
     </nav>
 
     <main>

@@ -39,6 +39,21 @@
     <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
         <img src='../../media/ChristmasOnMain-glamor.png' alt='Christmas On Main Open Now' />
       </article>
+      <div id="outerloginbox" class="center">
+        <h1 id="logintext">Login</h1>
+
+  <div class="innerloginbox" class="center">
+      <form>
+        <!-- <h5 class="logintext center">Username</h5> -->
+        <input class="inputform center" type="text" placeholder="Username">
+        <!-- <h5 class="logintext center">Password</h5> -->
+        <input class="inputform center" type="password" placeholder="Password">
+        <input type="submit" value="Login">
+
+      </form>
+  </div>
+</div>
+
     </main>
 
     <footer>

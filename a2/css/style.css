@@ -82,6 +82,12 @@ h2 {
   font-family: "Verdana", sans-serif;
 }
 
+h5 {
+  text-align:center;
+  font-size:12px;
+  font-family: "Verdana", sans-serif;
+}
+
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -101,4 +107,43 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+#outerloginbox {
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  background-color: red;
+  width: 20%;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#innerloginbox {
+  /* display: inline-block; */
+margin: 25% auto;
+  width: 80%;
+  background-color: blue;
+  /* text-align: center; */
+  border-radius: 6%;
+  height: 300px;
+
+}
+
+.inputform {
+/* display: inline-block; */
+/* margin: 20px auto; */
+height: 40px;
+width: 75%;
+margin: 10% auto;
+padding: 0;
+border-radius: 6%;
+border-style: none;
+text-align: center;
+}
+
+.logintext {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }

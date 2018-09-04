@@ -117,7 +117,10 @@ div.desc {
   width: 20%;
   height: 300px;
   border-radius: 3%;
+<<<<<<< HEAD
   box-shadow: 10px 10px 10px grey;
+=======
+>>>>>>> fe987769fc423ec7191bcf7ecc5c5b0dfa529817
 }
 
 #innerloginbox {

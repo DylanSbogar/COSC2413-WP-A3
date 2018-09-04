@@ -117,6 +117,7 @@ div.desc {
   width: 20%;
   height: 300px;
   border-radius: 3%;
+  box-shadow: 10px 10px 10px grey;
 }
 
 #innerloginbox {

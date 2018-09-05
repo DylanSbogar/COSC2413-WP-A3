@@ -36,9 +36,7 @@
 
     <main>
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
-    <p>Now Open!</p>
-	<p>Thursdays-Fridays: 10am - 4pm</p>
-	<p>Saturdays: 10am - 3pm</p>	
+    <p class="openInfo">Now Open! <br>Thursdays-Fridays: 10am - 4pm<br>Saturdays: 10am - 3pm</p>	
     </main>
 
     <footer>

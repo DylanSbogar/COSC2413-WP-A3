@@ -35,10 +35,6 @@
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/ChristmasOnMain-glamor.png' alt='Christmas On Main Open Now' />
-      </article>
       <div id="outerloginbox" class="center">
         <h1 id="logintext">Login</h1>
 

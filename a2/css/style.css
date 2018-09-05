@@ -6,6 +6,8 @@
 	padding: 25px;
 }
 
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -70,22 +72,23 @@ li.dropdown {
     justify-content: center;
 }
 
+p, h1, h2, h5, nav, a, li {
+	font-family: "Verdana", sans-serif;
+}
+
 h1 {
   text-align:center;
   font-size:2em;
-  font-family: "Verdana", sans-serif;
 }
 
 h2 {
   text-align:center;
   font-size:30px;
-  font-family: "Verdana", sans-serif;
 }
 
 h5 {
   text-align:center;
   font-size:12px;
-  font-family: "Verdana", sans-serif;
 }
 
 div.gallery {
@@ -165,9 +168,10 @@ text-align: center;
 }
 
 footer {
-background-color: grey;
 margin: 0;
 width: 100%;
+font-size: 12px;
+text-align: center;
 }
 
 #loginbutton {
@@ -184,4 +188,9 @@ width: 100%;
 #loginbutton:hover {
   background-color: blue;
   margin: 0 auto;
+}
+
+.openInfo {
+	text-align: center;
+	font-size: 24px;
 }

@@ -30,13 +30,13 @@
 					<a href="products.php#elves">Elves</a>
 				</div>
 			</li>
-			<li><a href="#">Login</a></li>
+			<li><a href="#">Log in</a></li>
 		</ul>
     </nav>
 
     <main>
       <div id="outerloginbox" class="center">
-        <h1 id="logintext">Login</h1>
+        <h1 id="logintext">Log in</h1>
 
   <div class="innerloginbox" class="center">
       <form>
@@ -44,7 +44,8 @@
         <input class="inputform center" type="text" placeholder="Username">
         <!-- <h5 class="logintext center">Password</h5> -->
         <input class="inputform center" type="password" placeholder="Password">
-        <input class="center" id="loginbutton" type="submit" value="Login">
+        <a class="center" href="">Forgot password?</a>
+        <input class="center" id="loginbutton" type="submit" value="Log in">
 
       </form>
   </div>

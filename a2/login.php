@@ -48,7 +48,7 @@
         <input class="inputform center" type="text" placeholder="Username">
         <!-- <h5 class="logintext center">Password</h5> -->
         <input class="inputform center" type="password" placeholder="Password">
-        <input type="submit" value="Login">
+        <input class="center" id="loginbutton" type="submit" value="Login">
 
       </form>
   </div>

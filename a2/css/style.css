@@ -72,7 +72,7 @@ li.dropdown {
 
 h1 {
   text-align:center;
-  font-size:41px;
+  font-size:2em;
   font-family: "Verdana", sans-serif;
 }
 
@@ -109,16 +109,28 @@ div.desc {
     text-align: center;
 }
 
+html, body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+
+
+
 #outerloginbox {
   /* display: block; */
   /* margin-left: auto; */
   /* margin-right: auto; */
+  margin-top: 20%;
   background-color: red;
-  width: 20%;
-  height: 300px;
-  border-radius: 3%;
-<<<<<<< HEAD
+  width: 25%;
+  height: 30%;
+  border-radius: 0%;
   box-shadow: 10px 10px 10px grey;
+<<<<<<< HEAD
 =======
 >>>>>>> fe987769fc423ec7191bcf7ecc5c5b0dfa529817
 }
@@ -138,7 +150,7 @@ margin: 25% auto;
 /* display: inline-block; */
 /* margin: 20px auto; */
 height: 40px;
-width: 75%;
+width: 90%;
 margin: 10% auto;
 padding: 0;
 border-radius: 6%;
@@ -150,4 +162,26 @@ text-align: center;
   padding: 0;
   margin: 0 auto;
   text-align: center;
+}
+
+footer {
+background-color: grey;
+margin: 0;
+width: 100%;
+}
+
+#loginbutton {
+    background-color: aqua; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#loginbutton:hover {
+  background-color: blue;
+  margin: 0 auto;
 }

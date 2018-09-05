@@ -37,6 +37,40 @@
     <main>
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <p class="openInfo">Now Open! <br>Thursdays-Fridays: 10am - 4pm<br>Saturdays: 10am - 3pm</p>	
+	
+	<h1>Gallery</h1>
+	
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-1.jpg" width="300"></img>
+		</div>
+	</div>
+	
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-2.jpg" width="300"></img>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-4.jpg" width="300"></img>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-6.jpg" width="300"></img>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-8.jpg" width="300"></img>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-7.jpg" width="300"></img>
+		</div>
+	</div>
     </main>
 
     <footer>

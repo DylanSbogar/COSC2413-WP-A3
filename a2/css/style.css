@@ -38,7 +38,6 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
     display: inline-block;
-    margin-top: 0;
 }
 
 .dropdown-content {
@@ -73,7 +72,7 @@ li.dropdown {
     justify-content: center;
 }
 
-p, h1, h2, h5, nav, a, li {
+p, h1, h2, h5, nav, a, li, div.desc {
 	font-family: "Verdana", sans-serif;
 }
 
@@ -92,27 +91,6 @@ h5 {
   font-size:12px;
 }
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
 html, body {
   height: 100%;
 }
@@ -129,9 +107,9 @@ main {
   /* margin-left: auto; */
   /* margin-right: auto; */
   margin-top: 20%;
-  background-color: #ca1a2a;
+  background-color: red;
   width: 25%;
-  height: 60%;
+  height: 30%;
   border-radius: 0%;
   box-shadow: 10px 10px 10px grey;
 <<<<<<< HEAD
@@ -145,8 +123,8 @@ margin: 25% auto;
   width: 80%;
   background-color: blue;
   /* text-align: center; */
-  /* border-radius: 6%; */
-  height: 50%;
+  border-radius: 6%;
+  height: 300px;
 
 }
 
@@ -157,7 +135,7 @@ height: 40px;
 width: 90%;
 margin: 10% auto;
 padding: 0;
-/* border-radius: 6%; */
+border-radius: 6%;
 border-style: none;
 text-align: center;
 }
@@ -166,7 +144,6 @@ text-align: center;
   padding: 0;
   margin: 0 auto;
   text-align: center;
-  color: white;
 }
 
 footer {
@@ -177,20 +154,19 @@ text-align: center;
 }
 
 #loginbutton {
-    background-color: grey; /* Green */
+    background-color: aqua; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
+    display: inline-block;
     font-size: 16px;
 }
 
 #loginbutton:hover {
   background-color: blue;
   margin: 0 auto;
-  cursor:grabbing;
 }
 
 .openInfo {
@@ -198,7 +174,44 @@ text-align: center;
 	font-size: 24px;
 }
 
-#forgotbutton {
-padding: 0;
-  display: run-in;
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.33333%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

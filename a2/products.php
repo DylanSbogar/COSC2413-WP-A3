@@ -36,9 +36,61 @@
 
     <main>
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
-    <p>Now Open!</p>
-	<p>Thursdays-Fridays: 10am - 4pm</p>
-	<p>Saturdays: 10am - 3pm</p>	
+    <div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-1.jpg" width="300"></img>
+			<div class="desc">Fir Christmas Tree<br>$200 - $350</div>
+		</div>
+	</div>
+	
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-2.jpg" width="300"></img>
+			<div class="desc">Pine Christmas Tree<br> $150 - $300</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-4.jpg" width="300"></img>
+			<div class="desc">Assorted Artificial Christmas Trees <br> $75 - $250</div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-6.jpg" width="300"></img>
+			<div class="desc"></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-8.jpg" width="300"></img>
+			<div class="desc"></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-7.jpg" width="300"></img>
+			<div class="desc"></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-7.jpg" width="300"></img>
+			<div class="desc"></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-7.jpg" width="300"></img>
+			<div class="desc"></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="../../media/gallery-7.jpg" width="300"></img>
+			<div class="desc"></div>
+		</div>
+	</div>
     </main>
 
     <footer>

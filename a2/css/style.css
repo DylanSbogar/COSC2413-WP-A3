@@ -71,7 +71,7 @@ li.dropdown {
     justify-content: center;
 }
 
-p, h1, h2, h5, nav, a, li, div.desc {
+p, h1, h2, h5, nav, a, li, div.desc, sizeButtons, img {
 	font-family: "Verdana", sans-serif;
 }
 
@@ -82,7 +82,7 @@ h1 {
 
 h2 {
   text-align:center;
-  font-size:30px;
+  font-size:1.25em;
 }
 
 h5 {
@@ -161,6 +161,22 @@ text-align: center;
     font-size: 1.5em;
 }
 
+#purchasebutton {
+  background-color: #77DD77;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#purchasebutton:hover {
+  background-color: #65BF65;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
 #loginbutton:hover {
   background-color: darkgrey;
   margin: 0 auto;
@@ -218,3 +234,88 @@ div.desc {
     display: table;
     clear: both;
 }
+
+.sizeradio {
+
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 10px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #ff6961;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.scrolls {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 300px;
+    white-space:nowrap
+}
+.imageDiv img {
+    box-shadow: 1px 1px 10px #999;
+    margin: 2px;
+    max-height: 400px;
+    cursor: pointer;
+    display:inline-block;
+    *display:inline;/* For IE7*/
+    *zoom:1;/* For IE7*/
+    vertical-align:top;
+ }

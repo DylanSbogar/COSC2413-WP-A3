@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Christmas On Main</title>
-    
+
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
@@ -35,7 +35,41 @@
     </nav>
 
     <main>
-	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->	
+	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
+      <h1>Fir Christmas Tree</h1>
+      <p>Size</p>
+      <form>
+        <label class="container">S
+          <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+      </label>
+      <label class="container">M
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+        <label class="container">L
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <input class="center" id="purchasebutton" type="submit" value="Purchase">
+      </form>
+      <p>$xx.xx</p>
+
+      <h2>See Similar Products:</h2>
+      <div class="wrapper">
+  <div class="scrolls">
+  <div class="imageDiv">
+        <img src="http://placehold.it/300x300" />
+       <img src="http://placehold.it/300x300" />
+       <img src="http://placehold.it/300x300" />
+       <img src="http://placehold.it/300x300" />
+       <img src="http://placehold.it/300x300" />
+       <img src="http://placehold.it/300x300" />
+      <img src="http://placehold.it/300x300" />
+    </div>
+  </div>
+  </div>
+
     </main>
 
     <footer>

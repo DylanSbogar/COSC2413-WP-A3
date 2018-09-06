@@ -9,9 +9,8 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
   </head>
-
+  
   <body>
-
     <header>
         <div>
 		<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->

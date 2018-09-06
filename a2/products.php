@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Christmas On Main</title>
-    
+
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
@@ -38,11 +38,13 @@
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <div class="responsive">
 		<div class="gallery">
+      <a href="product.php">
 			<img src="../../media/gallery-1.jpg" width="300"></img>
-			<div class="desc">Fir Christmas Tree<br>$200 - $350</div>
-		</div>
+			<div class="desc">Fir Christmas Tree (click me)<br>$200 - $350</div>
+      </a>
+    </div>
 	</div>
-	
+
 	<div class="responsive">
 		<div class="gallery">
 			<img src="../../media/gallery-2.jpg" width="300"></img>

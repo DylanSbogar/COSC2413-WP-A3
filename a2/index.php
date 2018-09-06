@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Christmas On Main</title>
-    
+
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
@@ -36,16 +36,16 @@
 
     <main>
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
-    <p class="openInfo">Now Open! <br>Thursdays-Fridays: 10am - 4pm<br>Saturdays: 10am - 3pm</p>	
-	
+    <p class="openInfo">Now Open! <br>Thursdays-Fridays: 10am - 4pm<br>Saturdays: 10am - 3pm</p>
+
 	<h1>Gallery</h1>
-	
+
 	<div class="responsive">
 		<div class="gallery">
 			<img src="../../media/gallery-1.jpg" width="300"></img>
 		</div>
 	</div>
-	
+
 	<div class="responsive">
 		<div class="gallery">
 			<img src="../../media/gallery-2.jpg" width="300"></img>

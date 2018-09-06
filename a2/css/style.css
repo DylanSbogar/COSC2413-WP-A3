@@ -3,7 +3,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-	padding: 25px;
 }
 
 
@@ -107,9 +106,9 @@ main {
   /* margin-left: auto; */
   /* margin-right: auto; */
   margin-top: 20%;
-  background-color: red;
-  width: 25%;
-  height: 30%;
+  background-color: #ca1a2a;
+  width: 30%;
+  height: 70%;
   border-radius: 0%;
   box-shadow: 10px 10px 10px grey;
 <<<<<<< HEAD
@@ -123,8 +122,7 @@ margin: 25% auto;
   width: 80%;
   background-color: blue;
   /* text-align: center; */
-  border-radius: 6%;
-  height: 300px;
+  height: 50%;
 
 }
 
@@ -135,15 +133,15 @@ height: 40px;
 width: 90%;
 margin: 10% auto;
 padding: 0;
-border-radius: 6%;
 border-style: none;
 text-align: center;
 }
 
-.logintext {
-  padding: 0;
+#logintext {
   margin: 0 auto;
+  padding-top: 10%;
   text-align: center;
+  color: white;
 }
 
 footer {
@@ -154,19 +152,24 @@ text-align: center;
 }
 
 #loginbutton {
-    background-color: aqua; /* Green */
+    background-color: grey;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 1.5em;
 }
 
 #loginbutton:hover {
-  background-color: blue;
+  background-color: darkgrey;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+#forgotbutton {
+  padding: 0px;
+  text-align: center;
 }
 
 .openInfo {

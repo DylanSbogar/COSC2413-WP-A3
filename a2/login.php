@@ -44,7 +44,7 @@
         <input class="inputform center" type="text" placeholder="Username">
         <!-- <h5 class="logintext center">Password</h5> -->
         <input class="inputform center" type="password" placeholder="Password">
-        <a class="center" href="">Forgot password?</a>
+        <a id="forgotbutton"class="center" href="forgotbutton">Forgot password?</a>
         <input class="center" id="loginbutton" type="submit" value="Log in">
 
       </form>

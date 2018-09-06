@@ -35,17 +35,22 @@
 
     <main>
       <div id="outerloginbox" class="center">
-        <h1 id="logintext">Log in</h1>
+        <h1 id="logintext">Login</h1>
 
   <div class="innerloginbox" class="center">
-      <form>
-        <!-- <h5 class="logintext center">Username</h5> -->
-        <input class="inputform center" type="text" placeholder="Username">
+		<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="get" target="_blank">
+		Email Address: <input class="inputform center" type="email" name="emailAddress" placeholder="Email Address">
+		Password: <input class= "inputform center" type="password" name="pass" placeholder="Password">
+		<input class="center" id="loginbutton" type="submit" value="Login">
+		</form>
+		
+		<form login="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post" target="_blank">
+		<!-- <h5 class="logintext center">Username</h5> -->
+        <input class="inputform center" type="email" placeholder="E-mail address">
         <!-- <h5 class="logintext center">Password</h5> -->
         <input class="inputform center" type="password" placeholder="Password">
-        <a id="forgotbutton"class="center" href="forgotbutton">Forgot password?</a>
+        <a id="forgotbutton"class="center" href="forgotbutton">Forgot password</a>
         <input class="center" id="loginbutton" type="submit" value="Log in">
-
       </form>
   </div>
 </div>

@@ -152,17 +152,7 @@ font-size: 12px;
 text-align: center;
 }
 
-#loginbutton {
-    background-color: grey;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-#purchasebutton {
+#purchasebutton, #loginbutton {
   background-color: #77DD77;
   border: none;
   color: white;
@@ -172,14 +162,8 @@ text-align: center;
   font-size: 1.5em;
 }
 
-#purchasebutton:hover {
+#purchasebutton:hover, #loginbutton:hover{
   background-color: #65BF65;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-#loginbutton:hover {
-  background-color: darkgrey;
   margin: 0 auto;
   cursor: pointer;
 }

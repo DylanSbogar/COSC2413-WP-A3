@@ -96,6 +96,7 @@ html, body {
 
 main {
   height: 100%;
+  width: 100%;
 }
 
 
@@ -321,10 +322,21 @@ div.desc {
  }
 
  #formproduct {
-   float: right;
+float: right;
+width: 50%;
+height: 50%;
+ }
+
+ #previewimage {
+margin-left: 10%;
+   float: left;
+   width: 50%;
+   height: 50%;
+ }
+
+ .wrapper {
  }
 
 .test {
-  margin:auto;
-  width: 85%;
+  width: 100%;
 }

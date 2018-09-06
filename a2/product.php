@@ -37,8 +37,10 @@
     <main>
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
       <h1>Fir Christmas Tree</h1>
+      <div class="test">
+      <img src="http://placehold.it/350x350" />
       <p>Size</p>
-      <form>
+      <form id="formproduct">
         <label class="container">S
           <input type="radio" checked="checked" name="radio">
             <span class="checkmark"></span>
@@ -53,19 +55,20 @@
         </label>
         <input class="center" id="purchasebutton" type="submit" value="Purchase">
       </form>
+    </div>
       <p>$xx.xx</p>
 
       <h2>See Similar Products:</h2>
       <div class="wrapper">
   <div class="scrolls">
   <div class="imageDiv">
-        <img src="http://placehold.it/300x300" />
-       <img src="http://placehold.it/300x300" />
-       <img src="http://placehold.it/300x300" />
-       <img src="http://placehold.it/300x300" />
-       <img src="http://placehold.it/300x300" />
-       <img src="http://placehold.it/300x300" />
-      <img src="http://placehold.it/300x300" />
+      <img src="http://placehold.it/250x250" />
+      <img src="http://placehold.it/250x250" />
+      <img src="http://placehold.it/250x250" />
+      <img src="http://placehold.it/250x250" />
+      <img src="http://placehold.it/250x250" />
+      <img src="http://placehold.it/250x250" />
+      <img src="http://placehold.it/250x250" />
     </div>
   </div>
   </div>

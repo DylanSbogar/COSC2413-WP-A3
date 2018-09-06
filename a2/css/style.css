@@ -299,7 +299,6 @@ div.desc {
 	left: 9px;
 	width: 8px;
 	height: 8px;
-	border-radius: 50%;
 	background: white;
 }
 
@@ -307,7 +306,8 @@ div.desc {
     overflow-x: scroll;
     overflow-y: hidden;
     height: 300px;
-    white-space:nowrap
+    white-space:nowrap;
+
 }
 .imageDiv img {
     box-shadow: 1px 1px 10px #999;
@@ -319,3 +319,12 @@ div.desc {
     *zoom:1;/* For IE7*/
     vertical-align:top;
  }
+
+ #formproduct {
+   float: right;
+ }
+
+.test {
+  margin:auto;
+  width: 85%;
+}

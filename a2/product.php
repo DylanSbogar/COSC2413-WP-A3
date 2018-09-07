@@ -38,28 +38,27 @@
     <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <h1>Fir Christmas Tree</h1>
     <div class="test center">
-      <div id="previewimage">
-        <
-      </div>
       <!-- <p>Size</p> -->
-      <div id="formproduct">
+      <div id="formproduct" class="center">
         <img src="http://placehold.it/350x350" />
-        <form>
-          <label class="container">S
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">M
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">L
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <input class="center" id="purchasebutton" type="submit" value="Purchase">
-        </form>
-        <p>$xx.xx</p>
+        <div id="information">
+          <form>
+            <span id="price"><p>$xx.xx</p></span>
+            <label class="container">S
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">M
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">L
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <input class="center" id="purchasebutton" type="submit" value="Purchase">
+          </form>
+        </div>
       </div>
     </div>
 

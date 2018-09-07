@@ -85,11 +85,6 @@ h2 {
   font-size:1.25em;
 }
 
-h5 {
-  text-align:center;
-  font-size:12px;
-}
-
 html, body {
   height: 100%;
 }
@@ -106,15 +101,12 @@ main {
   /* display: block; */
   /* margin-left: auto; */
   /* margin-right: auto; */
-  margin-top: 20%;
+  margin-top: 5%;
   background-color: #ca1a2a;
   width: 30%;
   height: 70%;
   border-radius: 0%;
   box-shadow: 10px 10px 10px grey;
-<<<<<<< HEAD
-=======
->>>>>>> fe987769fc423ec7191bcf7ecc5c5b0dfa529817
 }
 
 #innerloginbox {
@@ -161,6 +153,7 @@ text-align: center;
   text-decoration: none;
   font-size: 1.5em;
   margin-bottom:20px;
+  width: auto;
 }
 
 #purchasebutton:hover, #loginbutton:hover{
@@ -309,13 +302,15 @@ div.desc {
 
  #formproduct {
 display:inline-block;
-width: 50%;
-height: 50%;
- }
+margin-left: auto;
+margin-right: auto;
+
+}
 
  #formproduct form {
-   float:right;
- }
+   float:left;
+   margin-top: 30%;
+  }
 
  #previewimage {
 margin-left: 10%;
@@ -326,4 +321,18 @@ margin-left: 10%;
 
 .test {
   width: 100%;
+}
+
+#information {
+
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: inline-inline-block;
+}
+
+#price {
+  display: block;
+  float: left;
+  margin-top:10%;
 }

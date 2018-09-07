@@ -43,11 +43,11 @@
           <input class= "inputform center" type="password" name="pass" placeholder="Password">
           <input class="center" id="loginbutton" type="submit" value="Login">
         </form>
-        <div>
-    <img src="http://placehold.it/100x100" />
-    <img src="http://placehold.it/100x100" />
-    <img src="http://placehold.it/100x100" />
-  </div>
+        <div class ="center">
+    <img src="http://placehold.it/50x50" />
+    <img src="http://placehold.it/50x50" />
+    <img src="http://placehold.it/50x50" />
+    </div>
       </div>
     </div>
 

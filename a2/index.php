@@ -42,33 +42,33 @@
 
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-1.jpg" width="300"></img>
+			<img class="center" src="../../media/gallery-1.jpg" width="300"></img>
 		</div>
 	</div>
 
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-2.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery-2.jpg" width="300"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-4.jpg" width="300"></img>
+			<img  class="center" src="../../media/gallery-4.jpg" width="300"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-6.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery-6.jpg" width="300"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-8.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery-8.jpg" width="300"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-7.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery-7.jpg" width="300"></img>
 		</div>
 	</div>
     </main>

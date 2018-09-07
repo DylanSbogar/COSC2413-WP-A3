@@ -35,64 +35,111 @@
     </nav>
 
     <main>
+      <div id="productgallery">
 	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <div class="responsive">
 		<div class="gallery">
       <a href="product.php">
-			<img src="../../media/gallery-1.jpg" width="300"></img>
-			<div class="desc">Fir Christmas Tree (click me)<br>$200 - $350</div>
+			<img class="center" src="https://i.imgur.com/QEPurWz.jpg"></img>
+			<div class="desc">
+        <span>Fir Christmas Tree</span> <!-- name -->
+        <span>Artificial: No</span> <!-- artificial status -->
+        <span>Size: Large</span> <!-- small description (size?) -->
+        <span>$200 - $350</span> <!-- price -->
+       </div>
       </a>
     </div>
 	</div>
 
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-2.jpg" width="300"></img>
-			<div class="desc">Pine Christmas Tree<br> $150 - $300</div>
-		</div>
+			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <div class="desc">
+        <span>Pine Christmas Tree</span> <!-- name -->
+        <span>Artificial: No</span> <!-- artificial status -->
+        <span>Size: Large</span> <!-- small description (size?) -->
+        <span>$200 - $350</span> <!-- price -->
+       </div>
+     	</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-4.jpg" width="300"></img>
-			<div class="desc">Assorted Artificial Christmas Trees <br> $75 - $250</div>
-		</div>
+			<img class="center" src="https://i.imgur.com/MqxWcIJ.jpg"></img>
+      <div class="desc">
+        <span>Assorted Artificial Christmas Tree</span> <!-- name -->
+        <span>Artificial: Yes</span> <!-- artificial status -->
+        <span>Size: Large</span> <!-- small description (size?) -->
+        <span>$200 - $350</span> <!-- price -->
+       </div>
+     </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-6.jpg" width="300"></img>
-			<div class="desc"></div>
-		</div>
+			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <div class="desc">
+        <span>Oak Christmas Tree</span> <!-- name -->
+        <span>Artificial: No</span> <!-- artificial status -->
+        <span>Size: Large</span> <!-- small description (size?) -->
+        <span>$200 - $350</span> <!-- price -->
+       </div>
+     </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-8.jpg" width="300"></img>
-			<div class="desc"></div>
-		</div>
+			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <div class="desc">
+        <span>Chocolate Christmas Tree</span> <!-- name -->
+        <span>Artificial: Yes</span> <!-- artificial status -->
+        <span>Size: Small</span> <!-- small description (size?) -->
+        <span>$1000</span> <!-- price -->
+       </div>
+     </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-7.jpg" width="300"></img>
-			<div class="desc"></div>
-		</div>
+			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <div class="desc">
+        <span>Fir Christmas Tree</span> <!-- name -->
+        <span>Artificial: No</span> <!-- artificial status -->
+        <span>Size: Large</span> <!-- small description (size?) -->
+        <span>$200 - $350</span> <!-- price -->
+       </div>
+  		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-7.jpg" width="300"></img>
-			<div class="desc"></div>
-		</div>
+			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <div class="desc">
+        <span>Fir Christmas Tree</span> <!-- name -->
+        <span>Artificial: No</span> <!-- artificial status -->
+        <span>Size: Large</span> <!-- small description (size?) -->
+        <span>$200 - $350</span> <!-- price -->
+       </div>
+     </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-7.jpg" width="300"></img>
-			<div class="desc"></div>
-		</div>
+			<img class="center" src="https://cdn.shopify.com/s/files/1/2119/1111/products/Christmas_Tree_Costume.jpg?v=1510096599" ></img>
+      <div class="desc">
+        <span>Christmas Tree Cosplay</span> <!-- name -->
+        <span>Artificial: Yes</span> <!-- artificial status -->
+        <span>Size: Depends</span> <!-- small description (size?) -->
+        <span>$500</span> <!-- price -->
+       </div>
+     </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img src="../../media/gallery-7.jpg" width="300"></img>
-			<div class="desc"></div>
-		</div>
+			<img class="center" src="https://shop.coles.com.au/wcsstore/Coles-CAS/images/7/5/4/7545928.jpg"></img>
+      <div class="desc">
+        <span>A coles pack of lambingtons</span> <!-- name -->
+        <span>Artificial: Probably</span> <!-- artificial status -->
+        <span>Size: Serves 4</span> <!-- small description (size?) -->
+        <span>$2.50</span> <!-- price -->
+       </div>		
+     </div>
 	</div>
+</div>
     </main>
 
     <footer>

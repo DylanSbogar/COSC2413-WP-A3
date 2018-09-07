@@ -160,12 +160,14 @@ text-align: center;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
+  margin-bottom:20px;
 }
 
 #purchasebutton:hover, #loginbutton:hover{
   background-color: #65BF65;
   margin: 0 auto;
   cursor: pointer;
+  margin-bottom:20px;
 }
 
 #forgotbutton {
@@ -306,9 +308,13 @@ div.desc {
  }
 
  #formproduct {
-float: right;
+display:inline-block;
 width: 50%;
 height: 50%;
+ }
+
+ #formproduct form {
+   float:right;
  }
 
  #previewimage {
@@ -316,9 +322,6 @@ margin-left: 10%;
    float: left;
    width: 50%;
    height: 50%;
- }
-
- .wrapper {
  }
 
 .test {

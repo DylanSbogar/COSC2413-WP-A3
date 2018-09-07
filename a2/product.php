@@ -39,10 +39,11 @@
     <h1>Fir Christmas Tree</h1>
     <div class="test center">
       <div id="previewimage">
-        <img src="http://placehold.it/350x350" />
+        <
       </div>
       <!-- <p>Size</p> -->
       <div id="formproduct">
+        <img src="http://placehold.it/350x350" />
         <form>
           <label class="container">S
             <input type="radio" checked="checked" name="radio">

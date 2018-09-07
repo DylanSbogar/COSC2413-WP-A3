@@ -28,7 +28,7 @@
 					<a href="#trees">Trees</a>
 					<a href="#decor">Decorations</a>
 					<a href="#elves">Elves</a>
-				</div>
+				</div>*
 			</li>
 			<li><a href="login.php">Login</a></li>
 		</ul>

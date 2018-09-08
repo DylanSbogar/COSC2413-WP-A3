@@ -45,7 +45,6 @@
         <span class="productname">Fir Christmas Tree</span> <!-- name -->
         <hr>
         <span>Artificial: No</span> <!-- artificial status -->
-        <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
        </div>
       </a>
@@ -59,7 +58,6 @@
         <span class="productname">Pine Christmas Tree</span> <!-- name -->
         <hr>
         <span>Artificial: No</span> <!-- artificial status -->
-        <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      	</div>
@@ -71,7 +69,6 @@
         <span class="productname">Assorted Artificial Christmas Tree</span> <!-- name -->
         <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
-        <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      </div>
@@ -83,7 +80,6 @@
         <span class="productname">Oak Christmas Tree</span> <!-- name -->
         <hr>
         <span>Artificial: No</span> <!-- artificial status -->
-        <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      </div>
@@ -95,7 +91,6 @@
         <span class="productname">Chocolate Christmas Tree</span> <!-- name -->
         <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
-        <span>Size: Small</span> <!-- small description (size?) -->
         <span>$1000</span> <!-- price -->
        </div>
      </div>
@@ -108,7 +103,6 @@
         <hr>
 
         <span>Artificial: No</span> <!-- artificial status -->
-        <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
        </div>
   		</div>
@@ -120,7 +114,6 @@
         <span class="productname">Fir Christmas Tree</span> <!-- name -->
         <hr>
         <span>Artificial: No</span> <!-- artificial status -->
-        <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      </div>
@@ -132,7 +125,6 @@
         <span class="productname">Christmas Tree Cosplay</span> <!-- name -->
         <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
-        <span>Size: Depends</span> <!-- small description (size?) -->
         <span>$500</span> <!-- price -->
        </div>
      </div>
@@ -144,7 +136,6 @@
         <span class="productname">A coles pack of lambingtons</span> <!-- name -->
         <hr>
         <span>Artificial: Probably</span> <!-- artificial status -->
-        <span>Size: Serves 4</span> <!-- small description (size?) -->
         <span>$2.50</span> <!-- price -->
        </div>
      </div>

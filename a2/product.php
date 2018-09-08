@@ -23,7 +23,7 @@
     <ul>
       <li><a class="active" href="index.php">Home</a></li>
       <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Products</a>
+        <a href="products.php" class="dropbtn">Products</a>
         <div class="dropdown-content">
           <a href="products.php#trees">Trees</a>
           <a href="products.php#decor">Decorations</a>
@@ -37,25 +37,27 @@
   <main>
     <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <h1>Fir Christmas Tree</h1>
-    <div class="test center">
+    <div class="test" align="center">
       <!-- <p>Size</p> -->
       <div id="formproduct" class="center">
-        <img src="http://placehold.it/350x350" />
-        <div id="information">
-          <form>
-            <span id="price"><p>$xx.xx</p></span>
+        <img src="https://i.imgur.com/QEPurWz.jpg" height="350" />
+        <div id="information" align="right">
+          <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="get" target="_blank">
+            <span id="price"><p>$150.00</p></span>
+            <input type="hidden" name="id" value="t001">
             <label class="container">S
-              <input type="radio" checked="checked" name="radio">
+              <input type="radio" checked="checked" name="option" value="small">
               <span class="checkmark"></span>
             </label>
             <label class="container">M
-              <input type="radio" name="radio">
+              <input type="radio" name="option" value="medium">
               <span class="checkmark"></span>
             </label>
             <label class="container">L
-              <input type="radio" name="radio">
+              <input type="radio" name="option" value="large">
               <span class="checkmark"></span>
             </label>
+            <input type="number" name="qty" placeholder="quantity">
             <input class="center" id="purchasebutton" type="submit" value="Purchase">
           </form>
         </div>
@@ -63,10 +65,13 @@
     </div>
 
     <!-- <div id="similar"> -->
+    <h2>See Other Products:</h2>
     <div class="wrapper">
       <div class="scrolls">
-        <h2>See Similar Products:</h2>
         <div class="imageDiv">
+          <img src="http://placehold.it/250x250" />
+          <img src="http://placehold.it/250x250" />
+          <img src="http://placehold.it/250x250" />
           <img src="http://placehold.it/250x250" />
           <img src="http://placehold.it/250x250" />
           <img src="http://placehold.it/250x250" />

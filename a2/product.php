@@ -42,7 +42,7 @@
       <div id="formproduct" class="center">
         <img src="https://i.imgur.com/QEPurWz.jpg" height="350" />
         <div id="information" align="right">
-          <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="get" target="_blank">
+          <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="get|post" target="_blank">
             <span id="price"><p>$150.00</p></span>
             <input type="hidden" name="id" value="t001">
             <label class="container">S

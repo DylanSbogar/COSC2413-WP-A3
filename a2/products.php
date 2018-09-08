@@ -28,7 +28,7 @@
 					<a href="#trees">Trees</a>
 					<a href="#decor">Decorations</a>
 					<a href="#elves">Elves</a>
-				</div>*
+				</div>
 			</li>
 			<li><a href="login.php">Login</a></li>
 		</ul>
@@ -42,7 +42,8 @@
       <a href="product.php">
 			<img class="center" src="https://i.imgur.com/QEPurWz.jpg"></img>
 			<div class="desc">
-        <span>Fir Christmas Tree</span> <!-- name -->
+        <span class="productname">Fir Christmas Tree</span> <!-- name -->
+        <hr>
         <span>Artificial: No</span> <!-- artificial status -->
         <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
@@ -55,7 +56,8 @@
 		<div class="gallery">
 			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
       <div class="desc">
-        <span>Pine Christmas Tree</span> <!-- name -->
+        <span class="productname">Pine Christmas Tree</span> <!-- name -->
+        <hr>
         <span>Artificial: No</span> <!-- artificial status -->
         <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
@@ -66,7 +68,8 @@
 		<div class="gallery">
 			<img class="center" src="https://i.imgur.com/MqxWcIJ.jpg"></img>
       <div class="desc">
-        <span>Assorted Artificial Christmas Tree</span> <!-- name -->
+        <span class="productname">Assorted Artificial Christmas Tree</span> <!-- name -->
+        <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
         <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
@@ -77,7 +80,8 @@
 		<div class="gallery">
 			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
       <div class="desc">
-        <span>Oak Christmas Tree</span> <!-- name -->
+        <span class="productname">Oak Christmas Tree</span> <!-- name -->
+        <hr>
         <span>Artificial: No</span> <!-- artificial status -->
         <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
@@ -88,7 +92,8 @@
 		<div class="gallery">
 			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
       <div class="desc">
-        <span>Chocolate Christmas Tree</span> <!-- name -->
+        <span class="productname">Chocolate Christmas Tree</span> <!-- name -->
+        <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
         <span>Size: Small</span> <!-- small description (size?) -->
         <span>$1000</span> <!-- price -->
@@ -99,7 +104,9 @@
 		<div class="gallery">
 			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
       <div class="desc">
-        <span>Fir Christmas Tree</span> <!-- name -->
+        <span class="productname">Fir Christmas Tree</span> <!-- name -->
+        <hr>
+
         <span>Artificial: No</span> <!-- artificial status -->
         <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
@@ -110,7 +117,8 @@
 		<div class="gallery">
 			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
       <div class="desc">
-        <span>Fir Christmas Tree</span> <!-- name -->
+        <span class="productname">Fir Christmas Tree</span> <!-- name -->
+        <hr>
         <span>Artificial: No</span> <!-- artificial status -->
         <span>Size: Large</span> <!-- small description (size?) -->
         <span>$200 - $350</span> <!-- price -->
@@ -121,7 +129,8 @@
 		<div class="gallery">
 			<img class="center" src="https://cdn.shopify.com/s/files/1/2119/1111/products/Christmas_Tree_Costume.jpg?v=1510096599" ></img>
       <div class="desc">
-        <span>Christmas Tree Cosplay</span> <!-- name -->
+        <span class="productname">Christmas Tree Cosplay</span> <!-- name -->
+        <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
         <span>Size: Depends</span> <!-- small description (size?) -->
         <span>$500</span> <!-- price -->
@@ -132,11 +141,12 @@
 		<div class="gallery">
 			<img class="center" src="https://shop.coles.com.au/wcsstore/Coles-CAS/images/7/5/4/7545928.jpg"></img>
       <div class="desc">
-        <span>A coles pack of lambingtons</span> <!-- name -->
+        <span class="productname">A coles pack of lambingtons</span> <!-- name -->
+        <hr>
         <span>Artificial: Probably</span> <!-- artificial status -->
         <span>Size: Serves 4</span> <!-- small description (size?) -->
         <span>$2.50</span> <!-- price -->
-       </div>		
+       </div>
      </div>
 	</div>
 </div>

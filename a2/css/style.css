@@ -354,3 +354,27 @@ margin-left: 10%;
   height: 400px;
   margin: 5% auto;
 }
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.productname {
+font-size: 1.2em;
+font-weight: bold;
+
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: thin;
+    border-color: black;
+    border-radius: 30%;
+    width: 80%;
+}

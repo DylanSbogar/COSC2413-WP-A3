@@ -32,7 +32,7 @@
     <div class="infobox">
       <!-- <p>Size</p> -->
       <div id="formproduct">
-        <img class="center" src="../../media/products/firGen.jpg"/></img>
+        <img id="formproductimage" class="center" src="../../media/products/firGen.jpg"/></img>
       </div>
 
       <div id="information">

@@ -37,7 +37,7 @@
 
       <div id="information">
         <h1>Genuine Fir Tree</h1>
-        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+        <form name="order" onsubmit="return submitCheck()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
           <input type="hidden" name="id" value="t001">
           <div class="buttonsizes center">
             <label class="container">S
@@ -58,10 +58,11 @@
             <script src="quantity.js"></script>
             <p id="quantity">quantity</p>
             <input type="button" value="-" onclick='decrementValue()' name="decrease"></input>
-            <input id="quantitynumber" type="number" name="qty" readonly>
+            <input id="quantitynumber" type="number" name="qty" placeholder="0" readonly>
             <input type="button" value="+" onclick='incrementValue()' name="increase"></input>
           </div>
-          <span id="price"><p>$200.00 - $350.00</p></span>
+          <span id="price"><p>$300</p></span>
+          <div id="invalidwarning">Please enter a valid quantity!</div>
           <input class="center" id="purchasebutton" type="submit" value="Purchase"></input>
         </form>
       </div>

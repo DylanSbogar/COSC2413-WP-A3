@@ -9,3 +9,12 @@ function decrementValue() {
     document.getElementById('quantitynumber').value = --quantityvalue;
   }
 }
+
+function submitCheck() {
+  var elem = document.getElementById('invalidwarning');
+  if (document.forms["order"]["qty"].value < 1)
+  {
+    elem.style.visibility = 'visible';
+    return false;
+  }
+}

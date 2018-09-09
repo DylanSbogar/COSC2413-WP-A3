@@ -71,7 +71,7 @@ li.dropdown {
   margin-bottom:20px;
 }
 
-p, nav, a, li, div.desc, img, .buttonsizes{
+p, nav, a, li, div.desc, img, .buttonsizes, #invalidwarning{
   font-family: "Verdana", sans-serif;
 }
 
@@ -384,4 +384,11 @@ hr {
 
 #quantity {
   margin-bottom: 3px;
+}
+
+#invalidwarning {
+  visibility: hidden;
+  text-align:center;
+  color:red;
+  font-weight:bold;
 }

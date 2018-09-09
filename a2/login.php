@@ -38,9 +38,9 @@
       <h1 id="logintext">Login</h1>
 
       <div class="innerloginbox" class="center">
-        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="get" target="_blank">
-          <input class="inputform center" type="email" name="emailAddress" placeholder="Email Address">
-          <input class= "inputform center" type="password" name="pass" placeholder="Password">
+        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
+          <input class="inputform center" type="email" name="email" placeholder="Email Address">
+          <input class= "inputform center" type="password" name="password" placeholder="Password">
           <input class="center" id="loginbutton" type="submit" value="Login">
         </form>
         <hr>

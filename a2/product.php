@@ -42,7 +42,7 @@
       <div id="formproduct" class="center">
         <img src="https://i.imgur.com/QEPurWz.jpg" height="350" />
         <div id="information" align="right">
-          <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="get|post" target="_blank">
+          <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
             <span id="price"><p>$150.00</p></span>
             <input type="hidden" name="id" value="t001">
             <label class="container">S
@@ -65,23 +65,47 @@
     </div>
 
     <!-- <div id="similar"> -->
+
     <h2>See Other Products:</h2>
-    <div class="wrapper">
-      <div class="scrolls">
-        <div class="imageDiv">
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-          <img src="http://placehold.it/250x250" />
-        </div>
-      </div>
+    <div id="productgallery">
+  <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
+  <div class="responsive">
+  <div class="gallery">
+    <a href="product.php">
+    <img class="center" src="https://i.imgur.com/QEPurWz.jpg"></img>
+    <div class="desc">
+      <span class="productname">Fir Christmas Tree</span> <!-- name -->
+      <hr>
+      <span>Artificial: No</span> <!-- artificial status -->
+      <span>$200 - $350</span> <!-- price -->
+     </div>
+    </a>
+  </div>
+  </div>
+
+  <div class="responsive">
+  <div class="gallery">
+    <img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+    <div class="desc">
+      <span class="productname">Pine Christmas Tree</span> <!-- name -->
+      <hr>
+      <span>Artificial: No</span> <!-- artificial status -->
+      <span>$200 - $350</span> <!-- price -->
+     </div>
     </div>
+  </div>
+  <div class="responsive">
+  <div class="gallery">
+    <img class="center" src="https://i.imgur.com/MqxWcIJ.jpg"></img>
+    <div class="desc">
+      <span class="productname">Assorted Artificial Christmas Tree</span> <!-- name -->
+      <hr>
+      <span>Artificial: Yes</span> <!-- artificial status -->
+      <span>$200 - $350</span> <!-- price -->
+     </div>
+   </div>
+  </div>
+  </div>
   <!-- </div> -->
 
   </main>

@@ -4,5 +4,8 @@ function incrementValue() {
 }
 
 function decrementValue() {
+  if (document.getElementById('quantitynumber').value > 0)
+  {
     document.getElementById('quantitynumber').value = --quantityvalue;
+  }
 }

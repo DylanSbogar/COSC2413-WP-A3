@@ -20,20 +20,13 @@
 
   <nav class="nav">
     <ul>
-      <li><a class="active" href="index.php">Home</a></li>
-      <li class="dropdown">
-        <a href="products.php" class="dropbtn">Products</a>
-        <div class="dropdown-content">
-          <a href="products.php#trees">Trees</a>
-          <a href="products.php#decor">Decorations</a>
-          <a href="products.php#elves">Elves</a>
-        </div>
-      </li>
-      <li><a href="#">Log in</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="products.php">Products</a></li>
+      <li><a href="#">Login</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main id="loginmain">
     <div id="outerloginbox" class="center">
       <h1 id="logintext">Login</h1>
 

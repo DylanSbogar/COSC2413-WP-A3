@@ -5,8 +5,6 @@
   width: 50%;
 }
 
-
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -31,8 +29,8 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+li a:hover{
+  background-color: #ff6961;
 }
 
 li.dropdown {
@@ -73,8 +71,12 @@ li.dropdown {
   margin-bottom:20px;
 }
 
-p, h1, h2, h5, nav, a, li, div.desc, sizeButtons, img {
+p, nav, a, li, div.desc, img, .buttonsizes{
   font-family: "Verdana", sans-serif;
+}
+
+h1, h2, h5 {
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -92,16 +94,13 @@ html, body {
 }
 
 main {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
-
-
-
 #outerloginbox {
   margin-top: 5%;
-  background-color: #ca1a2a;
+  background-color: #ff6961;
   width: 25vw;
   height: 35vw;
   box-shadow: 10px 10px 10px grey;
@@ -137,6 +136,7 @@ footer {
   font-size: 12px;
   text-align: center;
   clear: both;
+  magin-top: 50px;
 }
 
 #purchasebutton, #loginbutton {
@@ -170,20 +170,20 @@ footer {
 
 div.gallery {
   border: 1px solid #ccc;
-  background-color: #7aa378;
+  background-color: #e5e5e5;
   width: 100%;
-  height: 40%;
+  height: auto;
 }
 
 div.gallery:hover {
   border: 1px solid #777;
-  background-color: #6c8e6b;
+  background-color: #dbdbdb;
 }
 
 .desc {
   padding: 15px;
   text-align: center;
-  background-color: #61d65e;
+  background-color: #77dd77;
   text-decoration: none;
 }
 
@@ -202,7 +202,7 @@ div.gallery:hover {
   float: left;
   width: 33.33333%;
   height: auto;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -216,12 +216,6 @@ div.gallery:hover {
   .responsive {
     width: 100%;
   }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .sizeradio {
@@ -256,16 +250,16 @@ div.gallery:hover {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #a8a8a8;
   border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #bfbfbf;
 }
 
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, add a red background */
 .container input:checked ~ .checkmark {
   background-color: #ff6961;
 }
@@ -294,7 +288,6 @@ div.gallery:hover {
 #formproduct {
   width: 50%;
   float: left;
-
 }
 
 #formproduct form {
@@ -310,10 +303,11 @@ div.gallery:hover {
   height: 50%;
 }
 
-.test {
+.infobox {
   width: 100%;
   height: 400px;
   background-color: #e6efe1;
+  padding:10px;
 }
 
 #information {
@@ -325,11 +319,14 @@ div.gallery:hover {
 
 #price {
   display: block;
+  text-align: center;
+  font-size:1.5em;
+  padding:15px;
 }
 
 .gallery img {
   width: 90%;
-  height: 90%;
+  height: auto;
   margin: 5% auto;
 }
 
@@ -341,7 +338,7 @@ div.gallery:hover {
 .productname {
   font-size: 1em;
   font-weight: bold;
-
+  text-align: center;
 }
 
 hr {
@@ -361,6 +358,8 @@ hr {
   margin-left:auto;
   margin-right:auto;
   width:80%;
+  display: flex;
+  flex-wrap:wrap;
 }
 
 #quantitynumber {
@@ -369,18 +368,25 @@ hr {
   margin: 0;
 }
 
-.quantitychanger {
-  background-color: #77DD77;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5em;
-  margin-bottom:20px;
-  width: auto;
-  height: 100%;
-}
-
 #inputbox {
   height: 20px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+#loginmain {
+  height: 80%;
+}
+
+.buttonsizes {
+  text-align: center;
+}
+
+#quantity {
+  margin-bottom: 3px;
+}
+
+#formproductimage {
+max-height: 100%;
+
 }

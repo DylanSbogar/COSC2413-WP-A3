@@ -57,12 +57,13 @@
               <input type="radio" name="option" value="large">
               <span class="checkmark"></span>
             </label>
-            <input id="quantitynumber" type="number" name="qty" placeholder="quantity">
-            <script src="quantity.js"></script>
-            <button value="+" onclick='incrementValue()' name="increase"></button>
-            <button value="-" onclick='decrementValue()' name="decrease"></button>
+            <input style="width:60px" id="quantitynumber" type="number" name="qty" readonly />
             <input class="center" id="purchasebutton" type="submit" value="Purchase">
           </form>
+
+          <script src="quantity.js"></script>
+          <button style="width:15px" value="-" onclick='decrementValue()'></button>
+          <button style="width:15px" value="+" onclick='incrementValue()'></button>
         </div>
       </div>
     </div>

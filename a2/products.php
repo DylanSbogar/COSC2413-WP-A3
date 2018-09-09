@@ -89,7 +89,6 @@
       <div class="desc">
         <span class="productname">Christmas Tree Costume</span> <!-- name -->
         <hr>
-        <span>Artificial: Yes</span> <!-- artificial status -->
         <span>$1000</span> <!-- price -->
        </div>
      </div>
@@ -102,7 +101,6 @@
         <span class="productname">Christmas Lights 10m</span> <!-- name -->
         <hr>
 
-        <span>Artificial: No</span> <!-- artificial status -->
         <span>$200 - $350</span> <!-- price -->
        </div>
   		</div>
@@ -114,7 +112,6 @@
       <div class="desc">
         <span class="productname">Christmas Ornaments Pack</span> <!-- name -->
         <hr>
-        <span>Artificial: No</span> <!-- artificial status -->
         <span>$25 - $50</span> <!-- price -->
        </div>
      </div>
@@ -126,7 +123,6 @@
       <div class="desc">
         <span class="productname">Christmas Tree Bow Topper</span> <!-- name -->
         <hr>
-        <span>Artificial: Yes</span> <!-- artificial status -->
         <span>$35</span> <!-- price -->
        </div>
      </div>
@@ -138,7 +134,6 @@
       <div class="desc">
         <span class="productname">Christmas Wreath</span> <!-- name -->
         <hr>
-        <span>Artificial: Probably</span> <!-- artificial status -->
         <span>$70</span> <!-- price -->
        </div>
      </div>

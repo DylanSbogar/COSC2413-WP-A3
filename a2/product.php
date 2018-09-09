@@ -79,11 +79,10 @@
   <div class="responsive">
   <div class="gallery">
     <a href="product.php">
-    <img class="center" src="https://i.imgur.com/QEPurWz.jpg"></img>
+    <img class="center" src="../../media/products/firArt.jpg"></img>
     <div class="desc">
-      <span class="productname">Fir Christmas Tree</span> <!-- name -->
+      <span class="productname">Artificial Fir Tree</span> <!-- name -->
       <hr>
-      <span>Artificial: No</span> <!-- artificial status -->
       <span>$200 - $350</span> <!-- price -->
      </div>
     </a>
@@ -92,22 +91,20 @@
 
   <div class="responsive">
   <div class="gallery">
-    <img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+    <img class="center" src="../../media/products/pineGen.jpg"></img>
     <div class="desc">
-      <span class="productname">Pine Christmas Tree</span> <!-- name -->
+      <span class="productname">Genuine Pine Tree</span> <!-- name -->
       <hr>
-      <span>Artificial: No</span> <!-- artificial status -->
       <span>$200 - $350</span> <!-- price -->
      </div>
     </div>
   </div>
   <div class="responsive">
   <div class="gallery">
-    <img class="center" src="https://i.imgur.com/MqxWcIJ.jpg"></img>
+    <img class="center" src="../../media/products/pineArt.jpg"></img>
     <div class="desc">
-      <span class="productname">Assorted Artificial Christmas Tree</span> <!-- name -->
+      <span class="productname">Artificial Pine Tree</span> <!-- name -->
       <hr>
-      <span>Artificial: Yes</span> <!-- artificial status -->
       <span>$200 - $350</span> <!-- price -->
      </div>
    </div>

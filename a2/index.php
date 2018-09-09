@@ -14,7 +14,6 @@
 
     <header>
       <div>
-		<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
 		<img src="../../media/ChristmasOnMain-logo.png" alt="Christmas On Main logo" class="center">
 	  </div>
     </header>
@@ -35,41 +34,40 @@
     </nav>
 
     <main>
-	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <p class="openInfo">Now Open! <br>Thursdays-Fridays: 10am - 4pm<br>Saturdays: 10am - 3pm</p>
 
 	<h1>Gallery</h1>
-	
+  <!-- Original images below sourced for educational purposes: https://facebook.com/christmasonmain77 -->
 	<div id="productgallery">
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="../../media/gallery-1.jpg" width="300"></img>
+			<img class="center" src="../../media/gallery/gallery-2.jpg"></img>
 		</div>
 	</div>
 
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center"  src="../../media/gallery-2.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery/gallery-1.jpg"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img  class="center" src="../../media/gallery-4.jpg" width="300"></img>
+			<img  class="center" src="../../media/gallery/gallery-4.jpg"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center"  src="../../media/gallery-6.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery/gallery-8.jpg"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center"  src="../../media/gallery-8.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery/gallery-6.jpg"></img>
 		</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center"  src="../../media/gallery-7.jpg" width="300"></img>
+			<img class="center"  src="../../media/gallery/gallery-7.jpg"></img>
 		</div>
 	</div>
 	</div>

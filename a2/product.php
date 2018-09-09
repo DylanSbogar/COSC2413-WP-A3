@@ -37,34 +37,37 @@
   <main>
     <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <h1>Fir Christmas Tree</h1>
-    <div class="test" align="center">
+    <div class="test">
       <!-- <p>Size</p> -->
-      <div id="formproduct" class="center">
-        <img src="https://i.imgur.com/QEPurWz.jpg" height="350" />
-        <div id="information" align="right">
-          <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
-            <span id="price"><p>$150.00</p></span>
-            <input type="hidden" name="id" value="t001">
-            <label class="container">S
-              <input type="radio" checked="checked" name="option" value="small">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">M
-              <input type="radio" name="option" value="medium">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">L
-              <input type="radio" name="option" value="large">
-              <span class="checkmark"></span>
-            </label>
-            <input style="width:60px" id="quantitynumber" type="number" name="qty" readonly />
-            <input class="center" id="purchasebutton" type="submit" value="Purchase">
-          </form>
+      <div id="formproduct">
+        <img class="center" src="https://i.imgur.com/QEPurWz.jpg"/></img>
+      </div>
 
-          <script src="quantity.js"></script>
-          <button style="width:15px" value="-" onclick='decrementValue()'></button>
-          <button style="width:15px" value="+" onclick='incrementValue()'></button>
-        </div>
+      <div id="information">
+        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+          <span id="price"><p>$200.00</p></span>
+          <input type="hidden" name="id" value="t001">
+          <label class="container">S
+            <input type="radio" checked="checked" name="option" value="small">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">M
+            <input type="radio" name="option" value="medium">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">L
+            <input type="radio" name="option" value="large">
+            <span class="checkmark"></span>
+          </label>
+
+          <br>
+          <div id="inputbox">
+            <input type="button" value="-" onclick='decrementValue()' name="decrease"></input>
+            <input id="quantitynumber" type="number" name="qty" readonly>
+            <input type="button" value="+" onclick='incrementValue()' name="increase"></input>
+          </div>
+          <input class="center" id="purchasebutton" type="submit" value="Purchase"></input>
+        </form>
       </div>
     </div>
 

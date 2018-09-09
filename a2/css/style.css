@@ -94,7 +94,6 @@ html, body {
 main {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 
@@ -141,10 +140,9 @@ text-align: center;
 }
 
 footer {
-margin: 0;
-width: 100%;
 font-size: 12px;
 text-align: center;
+clear: both;
 }
 
 #purchasebutton, #loginbutton {
@@ -179,6 +177,8 @@ text-align: center;
 div.gallery {
     border: 1px solid #ccc;
     background-color: #7aa378;
+    width: 100%;
+    height: 40%;
 }
 
 div.gallery:hover {
@@ -298,15 +298,15 @@ text-decoration: inherit;
 }
 
  #formproduct {
-display:inline-block;
-margin-left: auto;
-margin-right: auto;
+width: 50%;
+float: left;
 
 }
 
  #formproduct form {
    float:left;
    margin-top: 30%;
+   height: 100%;
   }
 
  #previewimage {
@@ -318,24 +318,24 @@ margin-left: 10%;
 
 .test {
   width: 100%;
+  height: 400px;
+  background-color: #e6efe1;
 }
 
 #information {
-  float: right;
   width: 50%;
   height: 100%;
-  display: inline-inline-block;
+  display: inline-block;
+  float; right;
 }
 
 #price {
   display: block;
-  float: left;
-  margin-top:10%;
 }
 
 .gallery img {
-  width: 300px;
-  height: 400px;
+  width: 90%;
+  height: 90%;
   margin: 5% auto;
 }
 
@@ -367,7 +367,27 @@ hr {
 	margin-left:auto;
 	margin-right:auto;
 	width:80%;
+}
 
 #quantitynumber {
   width:40px;
+  height: 100%;
+  margin: 0;
+}
+
+.quantitychanger {
+  background-color: #77DD77;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom:20px;
+  width: auto;
+  height: 100%;
+}
+
+#inputbox {
+
+  height: 20px;
 }

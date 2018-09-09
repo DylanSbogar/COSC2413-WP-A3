@@ -14,7 +14,6 @@
 
     <header>
       <div>
-		<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
 		<img src="../../media/ChristmasOnMain-logo.png" alt="Christmas On Main logo" class="center">
 	  </div>
     </header>
@@ -36,15 +35,14 @@
 
     <main>
       <div id="productgallery">
-	<!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <div class="responsive">
 		<div class="gallery">
       <a href="product.php">
-			<img class="center" src="https://i.imgur.com/QEPurWz.jpg"></img>
+        <!-- Original image below sourced for educational purposes: http://christmastreesdelivered.co.uk -->
+			<img class="center" src="../../media/products/firGen.jpg"></img>
 			<div class="desc">
-        <span class="productname">Fir Christmas Tree</span> <!-- name -->
+        <span class="productname"> Genuine Fir Tree</span> <!-- name -->
         <hr>
-        <span>Artificial: No</span> <!-- artificial status -->
         <span>$200 - $350</span> <!-- price -->
        </div>
       </a>
@@ -53,42 +51,43 @@
 
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <!-- Original image below sourced for educational purposes: https://www.allinone.co.uk -->
+			<img class="center" src="../../media/products/firArt.jpg"></img>
       <div class="desc">
-        <span class="productname">Pine Christmas Tree</span> <!-- name -->
+        <span class="productname">Artificial Fir Tree</span> <!-- name -->
         <hr>
-        <span>Artificial: No</span> <!-- artificial status -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      	</div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://i.imgur.com/MqxWcIJ.jpg"></img>
+      <!-- Original image below sourced for educational purposes: https://www.xmastree.com.au -->
+			<img class="center" src="../../media/products/pineGen.jpg"></img>
       <div class="desc">
-        <span class="productname">Assorted Artificial Christmas Tree</span> <!-- name -->
+        <span class="productname">Genuine Pine Tree</span> <!-- name -->
         <hr>
-        <span>Artificial: Yes</span> <!-- artificial status -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <!-- Original image below sourced for educational purposes: http://ii.christmastreeshops.com -->
+			<img class="center" src="../../media/products/pineArt.jpg"></img>
       <div class="desc">
-        <span class="productname">Oak Christmas Tree</span> <!-- name -->
+        <span class="productname">Artificial Pine Tree</span> <!-- name -->
         <hr>
-        <span>Artificial: No</span> <!-- artificial status -->
         <span>$200 - $350</span> <!-- price -->
        </div>
      </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <!-- Original image below sourced for educational purposes: https://www.costumebox.com.au -->
+			<img class="center" src="../../media/products/christmasCosplay.jpg"></img>
       <div class="desc">
-        <span class="productname">Chocolate Christmas Tree</span> <!-- name -->
+        <span class="productname">Christmas Tree Costume</span> <!-- name -->
         <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
         <span>$1000</span> <!-- price -->
@@ -97,9 +96,10 @@
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <!-- Original image below sourced for educational purposes: http://www.ithinkdifferently.me -->
+			<img class="center" src="../../media/products/lights.jpg"></img>
       <div class="desc">
-        <span class="productname">Fir Christmas Tree</span> <!-- name -->
+        <span class="productname">Christmas Lights 10m</span> <!-- name -->
         <hr>
 
         <span>Artificial: No</span> <!-- artificial status -->
@@ -109,34 +109,37 @@
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://i.imgur.com/dsFMGRi.jpg"></img>
+      <!-- Original image below sourced for educational purposes: https://www.snapdeal.com -->
+			<img class="center" src="../../media/products/ornaments.jpg"></img>
       <div class="desc">
-        <span class="productname">Fir Christmas Tree</span> <!-- name -->
+        <span class="productname">Christmas Ornaments Pack</span> <!-- name -->
         <hr>
         <span>Artificial: No</span> <!-- artificial status -->
-        <span>$200 - $350</span> <!-- price -->
+        <span>$25 - $50</span> <!-- price -->
        </div>
      </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://cdn.shopify.com/s/files/1/2119/1111/products/Christmas_Tree_Costume.jpg?v=1510096599" ></img>
+      <!-- Original image below sourced for educational purposes: https://shop.siamusic.net -->
+			<img class="center" src="../../media/products/treetopper.jpg" ></img>
       <div class="desc">
-        <span class="productname">Christmas Tree Cosplay</span> <!-- name -->
+        <span class="productname">Christmas Tree Bow Topper</span> <!-- name -->
         <hr>
         <span>Artificial: Yes</span> <!-- artificial status -->
-        <span>$500</span> <!-- price -->
+        <span>$35</span> <!-- price -->
        </div>
      </div>
 	</div>
 	<div class="responsive">
 		<div class="gallery">
-			<img class="center" src="https://shop.coles.com.au/wcsstore/Coles-CAS/images/7/5/4/7545928.jpg"></img>
+      <!-- Original image below sourced for educational purposes: https://target.scene7.comused -->
+			<img class="center" src="../../media/products/wreath.jpg"></img>
       <div class="desc">
-        <span class="productname">A coles pack of lambingtons</span> <!-- name -->
+        <span class="productname">Christmas Wreath</span> <!-- name -->
         <hr>
         <span>Artificial: Probably</span> <!-- artificial status -->
-        <span>$2.50</span> <!-- price -->
+        <span>$70</span> <!-- price -->
        </div>
      </div>
 	</div>

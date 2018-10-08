@@ -12,11 +12,9 @@
 
 <body>
 
-  <header>
-    <div>
-      <img src="../../media/ChristmasOnMain-logo.png" alt="Christmas On Main logo" class="center">
-    </div>
-  </header>
+<?php
+include 'include/header.php';
+?>
 
   <nav class="nav">
     <ul>
@@ -66,13 +64,17 @@
     </div>
   </main>
 
-  <footer>
+   <!-- <footer>
     <div>&copy;<script>
     document.write(new Date().getFullYear());
     </script> Dylan Sbogar: s3718036 & Matthew Moloney: s3717566.<br>"Group Name"</br></div>
     <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
     <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-  </footer>
+  </footer>  -->
+
+  <?php
+   include 'include/footer.php';
+  ?>
 
 </body>
 </html>

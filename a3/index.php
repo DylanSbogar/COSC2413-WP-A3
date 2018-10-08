@@ -16,13 +16,9 @@
 include 'include/header.php';
 ?>
 
-  <nav class="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="products.php">Products</a></li>
-      <li><a href="login.php">Login</a></li>
-    </ul>
-  </nav>
+<?php
+include 'include/nav.php';
+ ?>
 
   <main>
     <p class="openInfo">Now Open! <br>Thursdays-Fridays: 10am - 4pm<br>Saturdays: 10am - 3pm</p>

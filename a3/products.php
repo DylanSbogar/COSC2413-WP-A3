@@ -16,14 +16,10 @@
   include 'include/header.php';
   ?>
 
-  <nav class="nav">
-    <ul>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="login.php">Login</a></li>
-    </ul>
-  </nav>
-
+  <?php
+  include 'include/nav.php';
+   ?>
+   
   <main>
     <div id="productgallery">
       <div class="responsive">

@@ -15,14 +15,10 @@
   include 'include/header.php';
   ?>
 
-  <nav class="nav">
-    <ul>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="products.php">Products</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-  </nav>
-
+  <?php
+  include 'include/nav.php';
+   ?>
+   
   <main id="loginmain">
     <div id="outerloginbox" class="center">
       <h1 id="logintext">Login</h1>

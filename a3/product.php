@@ -16,14 +16,10 @@
   include 'include/header.php';
   ?>
 
-  <nav class="nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.php">Products</a></li>
-      <li><a href="login.php">Login</a></li>
-    </ul>
-  </nav>
-
+  <?php
+  include 'include/nav.php';
+   ?>
+   
   <main>
     <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <div class="infobox">

@@ -22,19 +22,17 @@
 
   <main>
     <div>
-
+      <!-- takes the products.txt file and puts it into the 2d array records[][]-->
       <?php
       $file = fopen('products.txt','r');
       while ($line = fgets($file))
       {
         $records[] = explode(",", $line);
       }
-      // print_r($records);
       fclose($file);
-      // print_r($records[1][3]);
-
-
       ?>
+
+      <!-- test to print data to a spreadsheet -->
       <table id="temptable">
       <tr>
       <td><?php echo $records[0][0] ?></td>
@@ -55,6 +53,7 @@
     </div>
 
   </main>
+  
   <?php
   include 'include/footer.php';
   ?>

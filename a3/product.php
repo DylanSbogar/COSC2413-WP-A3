@@ -19,7 +19,14 @@
   <?php
   include 'include/nav.php';
    ?>
-   
+
+   <?php
+if (empty($_SESSION['cart']))
+{
+  $_SESSION['cart'] = array();
+}
+   ?>
+
   <main>
     <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <div class="infobox">
@@ -56,7 +63,8 @@
           </div>
           <span id="price"><p>$300</p></span>
           <div id="invalidwarning">Please enter a valid quantity!</div>
-          <input class="center" id="purchasebutton" type="submit" value="Purchase"></input>
+          <!-- TESTING LINE BELOW-->
+          <input href="cart.php?qty=$qty&option=$option" class="center" id="purchasebutton" type="submit" value="Purchase"></input>
         </form>
       </div>
     </div>

@@ -12,17 +12,33 @@
 
 <body>
 
-<?php
-include 'include/header.php';
-?>
+  <?php
+  include 'include/header.php';
+  ?>
 
-<?php
-include 'include/nav.php';
- ?>
+  <?php
+  include 'include/nav.php';
+  ?>
 
-<?php
- include 'include/footer.php';
-?>
+  <main>
+    <div class="center">
+  <table id="carttable" class="center">
+    <tr>
+      <td> Product</td>
+      <td> Price</td>
+      <td> Quantity</td>
+    </tr>
+    <tr>
+      <td> 0 </td>
+      <td> 0 </td>
+      <td> 0 </td>
+    </table>
+  </div>
+  </main>
 
-</body>
-</html>
+    <?php
+    include 'include/footer.php';
+    ?>
+
+  </body>
+  </html>

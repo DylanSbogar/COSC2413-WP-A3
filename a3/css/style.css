@@ -396,3 +396,7 @@ hr {
 #temptable {
   border: 1px solid black;
 }
+
+#carttable {
+  border: 2px solid black;
+}

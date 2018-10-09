@@ -65,7 +65,7 @@ if (empty($_SESSION['cart']))
           <span id="price"><p>$300</p></span>
           <div id="invalidwarning">Please enter a valid quantity!</div>
           <!-- TESTING LINE BELOW-->
-          <input class="center" id="purchasebutton" type="submit" value="Purchase"></input>
+          <input class="center" id="purchasebutton" type="submit" value="Purchase" name="submit"></input>
         </form>
       </div>
     </div>

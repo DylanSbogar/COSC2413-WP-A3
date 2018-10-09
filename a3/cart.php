@@ -25,16 +25,18 @@
 
 // if ( isset( $_POST['order'] ) ) {
 // $cartquantity = 0;
-$cart[(int)$cartquantity][0] = $_POST["name"];
-$cart[(int)$cartquantity][1] = $_POST["qty"];
-$cart[(int)$cartquantity][2] = $_POST["option"];
-$cartquantity += 1;
+if (isset($_POST['submit'])){
+$_SESSION['$cart'][(int)$cartquantity][0] = $_POST["name"];
+$_SESSION['$cart'][(int)$cartquantity][1] = $_POST["qty"];
+$_SESSION['$cart'][(int)$cartquantity][2] = $_POST["option"];
+$_SESSION['$cartquantity'] += 1;
+}
 
 // echo "this is working";
 // echo "this is the cart quantity";
 // echo $cartquantity;
-// echo "this is the name of first item";
-// echo $cart[0][0];
+ // echo "this is the name of first item";
+ // echo $_SESSION['$cart'][0][0];
 // }
 
   ?>
@@ -47,7 +49,7 @@ $cartquantity += 1;
 
       <!-- Product #1 -->
       <?php
-      for ($x = 0; $x < $cartquantity; $x++)
+      for ($x = 0; $x <= $_SESSION['$cartquantity']; $x++)
       {
 
         echo '<div class="item">';
@@ -61,9 +63,9 @@ $cartquantity += 1;
         echo  '</div>';
 
         echo  '<div class="description">';
-        echo    '<span>'.$cart[$x][0];
+        echo    '<span>'.$_SESSION['$cart'][$x][0];
         echo  '</span>';
-        echo    '<span>'.$cart[$x][2];
+        echo    '<span>'.$_SESSION['$cart'][$x][2];
         echo '</span>';
         echo  '</div>';
 
@@ -72,18 +74,19 @@ $cartquantity += 1;
         echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
         echo      '<img src="plus.svg" alt="" />';
         echo   ' </button>';
-        echo    '<input id="quantitynumber" type="text" name="qty" value="'.$cart[$x][1].'">';
+        echo    '<input id="quantitynumber" type="text" name="qty" value="'.$_SESSION['$cart'][$x][1].'">';
         echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
         echo      '<img src="minus.svg" alt="" />';
         echo    '</button>';
         echo  '</div>';
+        echo  '<div class="total-price">$PLACEHOLDERTOTAL</div>';
+        echo      '</div>';
       }
       ?>
 
 
 
-        <div class="total-price">$349</div>
-      </div>
+
     </div>
   </main>
 

@@ -52,8 +52,29 @@
 
     </div>
 
+    <div class="center">
+      <input type="email" name="email" placeholder="Email Address"></input><br>
+      <input type="text" name="fname" placeholder="First Name"></input>
+      <input type="text" name="lname" placeholder="Last Name"></input><br>
+      <input type="text" name="address" placeholder="Address"></input><br>
+      <input type="text" name="address2" placeholder="Apartment, suite, etc. (Optional)"></input><br>
+      <select name="State/Territory">
+        <option value="NSW">New South Wales</option>
+        <option value="QLD">Queensland</option>
+        <option value="SA">South Australia</option>
+        <option value="TAS">Tasmania</option>
+        <option value="VIC">Victoria</option>
+        <option value="WA">Western Australia</option>
+        <option value="NT">Northern Territory</option>
+        <option value="ACT">Australian Capital Territory</option>
+      </select><br>
+      <input type="text" name="city" placeholder="City"></input>
+      <input type="number" name="postcode" placeholder="Postcode"></input><br>
+      <input type="tel" name="telnumber" placeholder="Phone Number"></input>
+    </div>
+    <input class="center" id="purchasebutton" type="submit" value="Confirm Details"></input>
   </main>
-  
+
   <?php
   include 'include/footer.php';
   ?>

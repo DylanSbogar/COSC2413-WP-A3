@@ -36,8 +36,9 @@ if (empty($_SESSION['cart']))
       </div>
 
       <div id="information">
-        <h1>Genuine Fir Tree</h1>
-        <form name="order" onsubmit="return submitCheck()" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+        <form name="order" action ="cart.php" onsubmit="return submitCheck()" method="post"> <!-- removed action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product"  -->
+          <h1 name="name">Genuine Fir Tree</h1>
+          <input type="hidden" name="name" value="Genuine Fir Tree">
           <input type="hidden" name="id" value="t001">
           <div class="buttonsizes center">
             <label class="container">S
@@ -64,7 +65,7 @@ if (empty($_SESSION['cart']))
           <span id="price"><p>$300</p></span>
           <div id="invalidwarning">Please enter a valid quantity!</div>
           <!-- TESTING LINE BELOW-->
-          <input href="cart.php?qty=$qty&option=$option" class="center" id="purchasebutton" type="submit" value="Purchase"></input>
+          <input class="center" id="purchasebutton" type="submit" value="Purchase"></input>
         </form>
       </div>
     </div>

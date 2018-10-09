@@ -29,8 +29,13 @@ if (isset($_POST['submit'])){
 $_SESSION['$cart'][(int)$cartquantity][0] = $_POST["name"];
 $_SESSION['$cart'][(int)$cartquantity][1] = $_POST["qty"];
 $_SESSION['$cart'][(int)$cartquantity][2] = $_POST["option"];
+$_SESSION['$cart'][(int)$cartquantity][3] = $_POST["price"];
 $_SESSION['$cartquantity'] += 1;
 }
+
+//manual reset
+// $_SESSION['$cartquantity'] = 0;
+// $_SESSION['$cart'] = array();
 
 // echo "this is working";
 // echo "this is the cart quantity";
@@ -49,9 +54,8 @@ $_SESSION['$cartquantity'] += 1;
 
       <!-- Product #1 -->
       <?php
-      for ($x = 0; $x <= $_SESSION['$cartquantity']; $x++)
+      for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
       {
-
         echo '<div class="item">';
         echo  '<div class="buttons">';
         echo    '<span class="delete-btn"></span>';
@@ -79,14 +83,20 @@ $_SESSION['$cartquantity'] += 1;
         echo      '<img src="minus.svg" alt="" />';
         echo    '</button>';
         echo  '</div>';
-        echo  '<div class="total-price">$PLACEHOLDERTOTAL</div>';
+        echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';
         echo      '</div>';
+
+        //TODO in here
+        //fix quantity, save it to the array
+        //fix the quantity increment buttons
+        //neaten up design
+      }
+
+      if ($x == 0)
+      {
+        echo '<div class="center" >cart is empty</div>';
       }
       ?>
-
-
-
-
     </div>
   </main>
 

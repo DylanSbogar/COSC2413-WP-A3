@@ -63,6 +63,7 @@ if (empty($_SESSION['cart']))
             <input type="button" value="+" onclick='incrementValue()' name="increase"></input>
           </div>
           <span id="price"><p>$300</p></span>
+          <input type="hidden" name="price" value="300">
           <div id="invalidwarning">Please enter a valid quantity!</div>
           <!-- TESTING LINE BELOW-->
           <input class="center" id="purchasebutton" type="submit" value="Purchase" name="submit"></input>

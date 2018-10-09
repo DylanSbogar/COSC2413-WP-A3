@@ -21,24 +21,110 @@
   ?>
 
   <main>
-    <div class="center">
-  <table id="carttable" class="center">
-    <tr>
-      <td> Product</td>
-      <td> Price</td>
-      <td> Quantity</td>
-    </tr>
-    <tr>
-      <td> 0 </td>
-      <td> 0 </td>
-      <td> 0 </td>
-    </table>
-  </div>
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title">
+        Cart
+      </div>
+
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="item-1.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span>Product Name Line 1</span>
+          <span>Product Name Line 2</span>
+          <span>Size</span>
+        </div>
+
+        <div class="quantity">
+          <script src="quantity.js"></script>
+          <button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input id="quantitynumber" type="text" name="qty" value="1">
+          <button class="plus-btn" type="button" name="increase" onclick="incrementValue()">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$549</div>
+      </div>
+
+      <!-- Product #2 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="item-2.png" alt=""/>
+        </div>
+
+        <div class="description">
+          <span>Product Name Line 1</span>
+          <span>Product Name Line 2</span>
+          <span>Size</span>
+        </div>
+
+        <div class="quantity">
+          <script src="quantity.js"></script>
+          <button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input id="quantitynumber" type="text" name="qty" value="1">
+          <button class="plus-btn" type="button" name="increase" onclick="incrementValue()">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$870</div>
+      </div>
+
+      <!-- Product #3 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="item-3.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span>Product Name Line 1</span>
+          <span>Product Name Line 2</span>
+          <span>Size</span>
+        </div>
+
+        <div class="quantity">
+          <script src="quantity.js"></script>
+          <button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input id="quantitynumber" type="text" name="qty" value="1">
+          <button class="plus-btn" type="button" name="increase" onclick="incrementValue()">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$349</div>
+      </div>
+    </div>
   </main>
 
-    <?php
-    include 'include/footer.php';
-    ?>
+  <?php
+  include 'include/footer.php';
+  ?>
 
   </body>
   </html>

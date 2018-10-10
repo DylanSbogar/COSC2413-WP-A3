@@ -1,2 +1,10 @@
-ID,OID,TITLE,DESC,OPTION,PRICE
-T123,SML,Big tree, a large tree, alive, 300
+ID,TITLE,DESC,PRICE,IMAGEPATH
+T001,Genuine Fir Tree, a large tree, 300, ../../media/products/firGen.jpg
+T002,Artificial Fir Tree, a large tree, 200, ../../media/products/firArt.jpg
+T003,Genuine Pine Tree, a large tree, 300, ../../media/products/pineGen.jpg
+T004,Artificial Pine Tree, a large tree, 200, ../../media/products/pineArt.jpg
+T005,Tree Costume, a large tree, 5000, ../../media/products/christmasCosplay.jpg
+T006,Christmas Lights 10m, a large tree, 50, ../../media/products/lights.jpg
+T007,Christmas Ornaments, a large tree, 10, ../../media/products/ornaments.jpg
+T008,Tree Topper, a large tree, 50, ../../media/products/treetopper.jpg
+T009,Wreath, a large tree, 40, ../../media/products/wreath.jpg

@@ -534,3 +534,34 @@ input:focus {
   color: #43484D;
   font-weight: 300;
 }
+
+#orderinfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding:25px;
+  background-color: #ff6961;
+}
+
+#orderinfo input[type=text],  #orderinfo input[type=submit] {
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+
+#orderinfo input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

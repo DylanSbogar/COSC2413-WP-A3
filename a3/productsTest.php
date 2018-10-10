@@ -38,7 +38,7 @@
       {
      echo   '<div class="responsive">';
      echo     '<div class="gallery">';
-     echo       '<a href="product.php">';
+     echo       '<a href="productTest.php?id=' . $value1[0] . '">';
      echo         "<!-- Original image below sourced for educational purposes: http://christmastreesdelivered.co.uk -->";
      echo         '<img class="center" src="'. $value[4].'"></img>';
      echo         '<div class="desc">';

@@ -46,7 +46,7 @@
      echo     '<div class="gallery">';
      echo       '<a href="productTest.php?id=' . $value1[0] . '">';
      echo         "<!-- Original image below sourced for educational purposes: http://christmastreesdelivered.co.uk -->";
-     echo         '<img class="center" src="'. $value[4].'"></img>';
+     echo         '<img class="center" src="'. $value1[4].'"></img>';
      echo         '<div class="desc">';
      echo            '<span class="productname">'. $value1[1]."</span> <!-- name -->";
      echo           "<hr>";

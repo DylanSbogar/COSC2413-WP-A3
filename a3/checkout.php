@@ -79,16 +79,36 @@
       }
 
       // defining variables
-      $fname = $lname = $email = $address = $telno = $creditcard = $expirydate = "";
+      $fname = $lname = $email = $address = $telno = $creditcard = $expirydate = $error =  "";
 
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $fname = test_input($_POST["fname"]);
-        $lname = test_input($_POST["lname"]);
-        $email = test_input($_POST["email"]);
-        $address = test_input($_POST["address"]);
-        $telno = test_input($_POST["telno"]);
-        $creditcard = test_input($_POST["creditcard"]);
-        $expirydate = test_input($_POST["expirydate"]);
+
+        if (empty($_POST["fname"])) {
+          $error= "First Name is required";
+        } else {
+          $fname = test_input($_POST["fname"]);
+          // check if name only contains letters and whitespace
+          if (!preg_match("/^[a-zA-Z\s,.'-]*$/",$fname)) {
+            $error = "Only letters and white space allowed";
+          }
+        }
+        if (empty($_POST["lname"])) {
+          $error= "Last Name is required";
+        } else {
+          $lname = test_input($_POST["lname"]);
+          // check if name only contains letters and whitespace
+          if (!preg_match("/^[a-zA-Z\s,.'-]*$/",$lname)) {
+            $error = "Last name error";
+          }
+        }
+
+        // $fname = test_input($_POST["fname"]);
+        // $lname = test_input($_POST["lname"]);
+        // $email = test_input($_POST["email"]);
+        // $address = test_input($_POST["address"]);
+        // // $telno = test_input($_POST["telno"]);
+        // $creditcard = test_input($_POST["creditcard"]);
+        // $expirydate = test_input($_POST["expirydate"]);
       }
 
       function test_input($data) {
@@ -114,7 +134,7 @@
           <label>Address</label>
           <input type="text" name="address" placeholder="Address"</input><br>
           <label>Phone Number</label>
-          <input type ="text" name="telno" placeholder="Phone Number" value="<?php echo $telno;?>" pattern="^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$"></input><br>
+          <input type ="text" name="telno" placeholder="Phone Number" value="<?php echo $telno;?>" ></input><br>
           <span class="error"><?php echo $telnoError;?></span>
           <label>Credit Card Number</label>
           <input type="number" name="creditcard" placeholder="Credit Card" ></input><br>
@@ -148,6 +168,8 @@
         echo $creditcard;
         echo "<br>";
         echo $expirydate;
+        echo "<br>";
+        echo $error;
         ?>
       </div>
     </main>

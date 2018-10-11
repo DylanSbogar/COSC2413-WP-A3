@@ -57,7 +57,6 @@ $_SESSION['$cartquantity']++;
         echo '<div class="item">';
         echo  '<div class="buttons">';
         echo    '<span class="delete-btn">Remove</span>';
-        echo    '<span class="like-btn"></span>';
         echo  '</div>';
 
         echo  '<div class="image">';
@@ -95,6 +94,9 @@ $_SESSION['$cartquantity']++;
         echo '<div class="center" >cart is empty</div>';
       }
       ?>
+      <form action="productsTest.php" method="post">
+          <input  type="submit" name="cancel" value="cancel" id="cancelbutton"></input>
+        </form>
     </div>
   </main>
 

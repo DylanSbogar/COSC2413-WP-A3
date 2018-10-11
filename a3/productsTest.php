@@ -30,6 +30,12 @@
    fclose($file);
    ?>
 
+   <?php
+   if (isset($_POST['cancel'])) {
+     session_destroy();
+   }
+   ?>
+
   <main>
     <div id="productgallery">
 

@@ -77,10 +77,10 @@ foreach($records as $v) {
           </div>
           <br>
           <div id="inputbox">
-            <script src="quantity.js"></script>
+            <script src="tools.js"></script>
             <p id="quantity">quantity</p>
             <input type="button" value="-" onclick='decrementValue()' name="decrease"></input>
-            <input id="quantitynumber" type="number" name="qty" placeholder="0" readonly>
+            <input id="quantitynumber" type="number" name="qty" value="0" readonly>
             <input type="button" value="+" onclick='incrementValue()' name="increase"></input>
           </div>
           <span id="price"><p>$<?php echo "$price"; ?></p></span>

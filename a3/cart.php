@@ -22,15 +22,15 @@
 
   <main>
   <?php
-
-// if ( isset( $_POST['order'] ) ) {
-// $cartquantity = 0;
 if (isset($_POST['submit'])){
 $_SESSION['$cart'][(int)$cartquantity][0] = $_POST["name"];
 $_SESSION['$cart'][(int)$cartquantity][1] = $_POST["qty"];
 $_SESSION['$cart'][(int)$cartquantity][2] = $_POST["option"];
 $_SESSION['$cart'][(int)$cartquantity][3] = $_POST["price"];
-$_SESSION['$cartquantity'] += 1;
+$cartquantity = $_SESSION['$cartquantity']++;
+
+echo "Cart quantity: ";
+echo "$cartquantity";
 }
 
 //manual reset
@@ -58,7 +58,7 @@ $_SESSION['$cartquantity'] += 1;
       {
         echo '<div class="item">';
         echo  '<div class="buttons">';
-        echo    '<span class="delete-btn"></span>';
+        echo    '<span class="delete-btn">Remove</span>';
         echo    '<span class="like-btn"></span>';
         echo  '</div>';
 
@@ -74,13 +74,13 @@ $_SESSION['$cartquantity'] += 1;
         echo  '</div>';
 
         echo  '<div class="quantity">';
-        echo    '<script src="quantity.js"></script>';
+        echo    '<script src="tools.js"></script>';
         echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
-        echo      '<img src="plus.svg" alt="" />';
+        echo      '-';
         echo   ' </button>';
-        echo    '<input id="quantitynumber" type="text" name="qty" value="'.$_SESSION['$cart'][$x][1].'">';
+        echo    '<input id="quantitynumber" type="number" name="qty" value="'.$_SESSION['$cart'][$x][1].'" readonly>';
         echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
-        echo      '<img src="minus.svg" alt="" />';
+        echo      '+';
         echo    '</button>';
         echo  '</div>';
         echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';

@@ -1,11 +1,12 @@
-var quantityvalue = 0;
 function incrementValue() {
+  var quantityvalue = document.getElementById('quantitynumber').value;
     document.getElementById('quantitynumber').value = ++quantityvalue;
 }
 
 function decrementValue() {
   if (document.getElementById('quantitynumber').value > 0)
   {
+    var quantityvalue = document.getElementById('quantitynumber').value;
     document.getElementById('quantitynumber').value = --quantityvalue;
   }
 }

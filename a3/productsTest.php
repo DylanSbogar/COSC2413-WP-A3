@@ -44,7 +44,7 @@
      echo         '<div class="desc">';
      echo            '<span class="productname">'. $value1[1]."</span> <!-- name -->";
      echo           "<hr>";
-     echo           "<span>".$value1[3]."</span> <!-- price -->";
+     echo           "<span>$".$value1[3]."</span> <!-- price -->";
      echo         "</div>";
      echo       "</a>";
      echo     "</div>";

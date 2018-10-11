@@ -35,12 +35,6 @@
 
 <?php include 'include/cart.php' ?>
 
-      <?php
-      if ($x == 0)
-      {
-        echo '<div class="center" >cart is empty</div>';
-      }
-      ?>
       <form action="products.php" method="post">
         <input  type="submit" name="cancel" value="cancel" id="cancelbutton"></input>
       </form>

@@ -20,6 +20,11 @@
       echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';
       echo  '</div>';
     }
+
+    if ($x == 0)
+    {
+      echo '<br><div class="center" >cart is empty</div>';
+    }
     ?>
   </div>
 </div>

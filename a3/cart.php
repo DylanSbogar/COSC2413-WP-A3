@@ -21,28 +21,28 @@
   ?>
 
   <main>
-  <?php
-if (isset($_POST['submit'])){
-$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][0] = $_POST["name"];
-$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][1] = $_POST["qty"];
-$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][2] = $_POST["option"];
-$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][3] = $_POST["price"];
-$_SESSION['$cartquantity']++;
+    <?php
+    if (isset($_POST['submit'])){
+      $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][0] = $_POST["name"];
+      $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][1] = $_POST["qty"];
+      $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][2] = $_POST["option"];
+      $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][3] = $_POST["price"];
+      $_SESSION['$cartquantity']++;
 
-}
+    }
 
-//manual reset
-// $_SESSION['$cartquantity'] = 0;
-// $_SESSION['$cart'] = array();
+    //manual reset
+    // $_SESSION['$cartquantity'] = 0;
+    // $_SESSION['$cart'] = array();
 
-// echo "this is working";
-// echo "this is the cart quantity";
-// echo $cartquantity;
- // echo "this is the name of first item";
- // echo $_SESSION['$cart'][0][0];
-// }
+    // echo "this is working";
+    // echo "this is the cart quantity";
+    // echo $cartquantity;
+    // echo "this is the name of first item";
+    // echo $_SESSION['$cart'][0][0];
+    // }
 
-  ?>
+    ?>
 
     <div class="shopping-cart">
       <!-- Title -->
@@ -95,8 +95,12 @@ $_SESSION['$cartquantity']++;
       }
       ?>
       <form action="productsTest.php" method="post">
-          <input  type="submit" name="cancel" value="cancel" id="cancelbutton"></input>
-        </form>
+        <input  type="submit" name="cancel" value="cancel" id="cancelbutton"></input>
+      </form>
+
+      <form action="checkout.php" method="post">
+        <input  type="submit" name="checkout" value="Proceed to Checkout" id="checkoutbutton"></input>
+      </form>
     </div>
   </main>
 
@@ -104,5 +108,5 @@ $_SESSION['$cartquantity']++;
   include 'include/footer.php';
   ?>
 
-  </body>
-  </html>
+</body>
+</html>

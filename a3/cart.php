@@ -23,14 +23,12 @@
   <main>
   <?php
 if (isset($_POST['submit'])){
-$_SESSION['$cart'][(int)$cartquantity][0] = $_POST["name"];
-$_SESSION['$cart'][(int)$cartquantity][1] = $_POST["qty"];
-$_SESSION['$cart'][(int)$cartquantity][2] = $_POST["option"];
-$_SESSION['$cart'][(int)$cartquantity][3] = $_POST["price"];
-$cartquantity = $_SESSION['$cartquantity']++;
+$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][0] = $_POST["name"];
+$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][1] = $_POST["qty"];
+$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][2] = $_POST["option"];
+$_SESSION['$cart'][(int)$_SESSION['$cartquantity']][3] = $_POST["price"];
+$_SESSION['$cartquantity']++;
 
-echo "Cart quantity: ";
-echo "$cartquantity";
 }
 
 //manual reset

@@ -21,25 +21,48 @@
    ?>
 
    <?php
+   $file = fopen('products.txt','r');
+   fgets($file); //skips the title row
+   while ($line = fgets($file))
+   {
+     $records[] = explode(",", $line);
+   }
+
+
+   fclose($file);
+
 if (empty($_SESSION['cart']))
 {
   $_SESSION['cart'] = array();
 }
+
+$id = $_GET['id'];
+
+foreach($records as $v) {
+    if ($v[0] == $id) {
+        $name = $v[1];
+        $desc = $v[2];
+        $price = $v[3];
+        $path = $v[4];
+        break;
+    }
+}
    ?>
 
   <main>
+
     <!-- Creative Commons image sourced from https://facebook.com/christmasonmain77 and used for educational purposes only -->
     <div class="infobox">
       <!-- <p>Size</p> -->
       <div id="formproduct">
-        <img id="formproductimage" class="center" src="../../media/products/firGen.jpg"/></img>
+        <img id="formproductimage" class="center" src="<?php echo "$path"; ?>"/></img>
       </div>
 
       <div id="information">
         <form name="order" action ="cart.php" onsubmit="return submitCheck()" method="post"> <!-- removed action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product"  -->
-          <h1 name="name">Genuine Fir Tree</h1>
-          <input type="hidden" name="name" value="Genuine Fir Tree">
-          <input type="hidden" name="id" value="t001">
+          <h1 name="name"><?php echo "$name"; ?></h1>
+          <input type="hidden" name="name" value="<?php echo "$name"; ?>">
+          <input type="hidden" name="id" value="<?php echo "$id"; ?>">
           <div class="buttonsizes center">
             <label class="container">S
               <input type="radio" checked="checked" name="option" value="small">
@@ -56,14 +79,14 @@ if (empty($_SESSION['cart']))
           </div>
           <br>
           <div id="inputbox">
-            <script src="quantity.js"></script>
+            <script src="tools.js"></script>
             <p id="quantity">quantity</p>
             <input type="button" value="-" onclick='decrementValue()' name="decrease"></input>
-            <input id="quantitynumber" type="number" name="qty" placeholder="0" readonly>
+            <input id="quantitynumber" type="number" name="qty" value="0" readonly>
             <input type="button" value="+" onclick='incrementValue()' name="increase"></input>
           </div>
-          <span id="price"><p>$300</p></span>
-          <input type="hidden" name="price" value="300">
+          <span><p id="price"><?php echo "$".$price."ea"; ?></p></span>
+          <input id="productprice" type="hidden" name="price" value="<?php echo "$price"; ?>">
           <div id="invalidwarning">Please enter a valid quantity!</div>
           <!-- TESTING LINE BELOW-->
           <input class="center" id="purchasebutton" type="submit" value="Purchase" name="submit"></input>

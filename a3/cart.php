@@ -31,69 +31,17 @@
       $_SESSION['$cartquantity']++;
 
     }
-
-    //manual reset
-    // $_SESSION['$cartquantity'] = 0;
-    // $_SESSION['$cart'] = array();
-
-    // echo "this is working";
-    // echo "this is the cart quantity";
-    // echo $cartquantity;
-    // echo "this is the name of first item";
-    // echo $_SESSION['$cart'][0][0];
-    // }
-
     ?>
 
-    <div class="shopping-cart">
-      <!-- Title -->
-      <div class="title">
-        Cart
-      </div>
+<?php include 'include/cart.php' ?>
 
-      <!-- Product #1 -->
       <?php
-      for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
-      {
-        echo '<div class="item">';
-
-        echo  '<div class="image">';
-        echo    '<img src="item-1.png" alt="" />';
-        echo  '</div>';
-
-        echo  '<div class="description">';
-        echo    '<span>'.$_SESSION['$cart'][$x][0];
-        echo  '</span>';
-        echo    '<span>'.$_SESSION['$cart'][$x][2];
-        echo '</span>';
-        echo  '</div>';
-
-        echo  '<div class="quantity">';
-        echo    '<script src="tools.js"></script>';
-        // echo '<form>'
-        // echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
-        // echo      '-';
-        // echo   ' </button>';
-        echo    '<input id="quantitynumber" type="number" name="qty" value="'.$_SESSION['$cart'][$x][1].'" readonly>';
-        // echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
-        // echo      '+';
-        // echo    '</button>';
-        echo  '</div>';
-        echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';
-        echo      '</div>';
-
-        //TODO in here
-        //fix quantity, save it to the array
-        //fix the quantity increment buttons
-        //neaten up design
-      }
-
       if ($x == 0)
       {
         echo '<div class="center" >cart is empty</div>';
       }
       ?>
-      <form action="productsTest.php" method="post">
+      <form action="products.php" method="post">
         <input  type="submit" name="cancel" value="cancel" id="cancelbutton"></input>
       </form>
 

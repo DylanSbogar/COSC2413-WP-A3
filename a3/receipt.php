@@ -53,9 +53,6 @@ include 'include/header.php';
       fputs($handle, $line);
     }
     fclose($handle);
-
-
-
     //if no errors carry on
 
         # Title of the CSV
@@ -71,11 +68,6 @@ include 'include/header.php';
         // echo $Content;
         // exit();
 }
-
-
-
-
-
 ?>
 
 </main>

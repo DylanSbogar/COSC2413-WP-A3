@@ -21,55 +21,10 @@
   ?>
 
   <main>
-    <div>
 
 
-      <!-- PLACEHOLDER CART, MUST BE UPDATED WITH FUNCTIONAL CART -->
-      <div class="shopping-cart">
-        <!-- Title -->
-        <div class="title">
-          Order Summary
-        </div>
+    <?php include 'include/cart.php' ?>
 
-        <!-- Product #1 -->
-        <?php
-        for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
-        {
-          echo '<div class="item">';
-
-          echo  '<div class="image">';
-          echo    '<img src="item-1.png" alt="" />';
-          echo  '</div>';
-
-          echo  '<div class="description">';
-          echo    '<span>'.$_SESSION['$cart'][$x][0];
-          echo  '</span>';
-          echo    '<span>'.$_SESSION['$cart'][$x][2];
-          echo '</span>';
-          echo  '</div>';
-
-          echo  '<div class="quantity">';
-          echo    '<script src="tools.js"></script>';
-          // echo '<form>'
-          // echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
-          // echo      '-';
-          // echo   ' </button>';
-          echo    '<input id="quantitynumber" type="number" name="qty" value="'.$_SESSION['$cart'][$x][1].'" readonly>';
-          // echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
-          // echo      '+';
-          // echo    '</button>';
-          echo  '</div>';
-          echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';
-          echo      '</div>';
-
-          //TODO in here
-          //fix quantity, save it to the array
-          //fix the quantity increment buttons
-          //neaten up design
-        }
-        ?>
-      </div>
-    </div>
 
     <div id="totals" class="center">
       <?php
@@ -79,29 +34,74 @@
       }
 
       // defining variables
-      $fname = $lname = $email = $address = $telno = $creditcard = $expirydate = $error =  "";
+      $fname = $lname = $email = $address = $telno = $creditcard = $expirydate = "";
+      $fnameerror = $lnameerror = $emailerror = $addresserror = $telnoerror = $creditcarderror = $expirydateerror = "";
 
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (empty($_POST["fname"])) {
-          $error= "First Name is required";
+          $fnameerror= "First Name is required";
         } else {
           $fname = test_input($_POST["fname"]);
           // check if name only contains letters and whitespace
           if (!preg_match("/^[a-zA-Z\s,.'-]*$/",$fname)) {
-            $error = "Only letters and white space allowed";
+            $fnameerror = "First Name error";
           }
         }
         if (empty($_POST["lname"])) {
-          $error= "Last Name is required";
+          $lnameerror= "Last Name is required";
         } else {
           $lname = test_input($_POST["lname"]);
           // check if name only contains letters and whitespace
           if (!preg_match("/^[a-zA-Z\s,.'-]*$/",$lname)) {
-            $error = "Last name error";
+            $lnameerror = "Last name error";
           }
         }
-
+        if (empty($_POST["email"])) {
+          $emailerror = "Email is required";
+        } else {
+          $email = test_input($_POST["email"]);
+          // check if e-mail address is well-formed
+          if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailerror = "Invalid email format";
+          }
+        }
+        if (empty($_POST["address"])) {
+          $addresserror= "Address is required";
+        } else {
+          $address = test_input($_POST["address"]);
+          // check if name only contains letters and whitespace
+          if (!preg_match("/^[a-zA-Z0-9\s,.'-]*$/",$address)) {
+            $addresserror = "Address error";
+          }
+        }
+        if (empty($_POST["telno"])) {
+          $telnoerror= "Phone number is required";
+        } else {
+          $telno = test_input($_POST["telno"]);
+          // check if name only contains letters and whitespace
+          if (!preg_match("/^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$/",$telno)) {
+            $telnoerror = "Phone number error";
+          }
+        }
+        if (empty($_POST["creditcard"])) {
+          $creditcarderror= "Credit card number is required";
+        } else {
+          $creditcard = test_input($_POST["creditcard"]);
+          // check if name only contains letters and whitespace
+          if (!preg_match("/^[0-9\s]{12,19}$/",$creditcard)) {
+            $creditcarderror = "Credit card error";
+          }
+          if (empty($_POST["expirydate"])) {
+            $expirydateerror= "Credit card expiry date is required";
+          } else {
+            $expirydate = test_input($_POST["expirydate"]);
+            // check if name only contains letters and whitespace
+            if (!preg_match("/^(0[1-9]{1}|1[0-2]{1})\/\d{4}$/",$expirydate)) {
+              $expirydateerror = "Credit card expiry date error";
+            }
+          }
+        }
         // $fname = test_input($_POST["fname"]);
         // $lname = test_input($_POST["lname"]);
         // $email = test_input($_POST["email"]);
@@ -128,21 +128,25 @@
         <label>Full Name</label>
         <span id="inputTitle"Last Name</span><br>
           <input type="text" name="fname" placeholder="First Name"></input>
+          <span class="error"><?php echo $fnameerror ?></span><br>
           <input type="text" name="lname" placeholder="Last Name"></input> <br>
+          <span class="error"><?php echo $lnameerror ?></span><br>
           <label>Email Address</label>
-          <input type="email" name="email" placeholder="Email Address"></input><br>
+          <input type="text" name="email" placeholder="Email Address"></input><br>
+          <span class="error"><?php echo $emailerror ?></span><br>
           <label>Address</label>
           <input type="text" name="address" placeholder="Address"</input><br>
+          <span class="error"><?php echo $addresserror ?></span><br>
           <label>Phone Number</label>
           <input type ="text" name="telno" placeholder="Phone Number" value="<?php echo $telno;?>" ></input><br>
-          <span class="error"><?php echo $telnoError;?></span>
+          <span class="error"><?php echo $telnoerror ?></span><br>
           <label>Credit Card Number</label>
-          <input type="number" name="creditcard" placeholder="Credit Card" ></input><br>
-          <!-- pattern="^4[0-9]{12}(?:[0-9]{3})?$" -->
+          <input type="text" name="creditcard" placeholder="Credit Card" ></input><br>
+          <span class="error"><?php echo $creditcarderror ?></span><br>
           <label>Expiry Date</label>
-          <input name="expirydate" placeholder="Expiry Date"</input><br>
+          <input type="text" name="expirydate" placeholder="Expiry Date"</input><br>
+          <span class="error"><?php echo $expirydateerror;?></span><br>
           <input type="hidden" name="total" value="<?php $total ?>"</input><br>
-
           <input type="submit" name="submit" value="submit">
 
           <p id="demo"></p>
@@ -169,12 +173,11 @@
         echo "<br>";
         echo $expirydate;
         echo "<br>";
-        echo $error;
+        echo $addresserror;
         ?>
       </div>
+
     </main>
-
-
 
     <?php
     include 'include/footer.php';

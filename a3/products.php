@@ -19,112 +19,44 @@
   <?php
   include 'include/nav.php';
    ?>
-   
+
+   <!-- takes the products.txt file and puts it into the 2d array records[][]-->
+   <?php
+   $file = fopen('products.txt','r');
+   fgets($file);
+   while (!feof($file))
+   {
+     $records[] = fgetcsv($file);
+     echo $records[9];
+   }
+   fclose($file);
+
+
+   if (isset($_POST['cancel'])) {
+     session_destroy();
+   }
+   ?>
+
   <main>
     <div id="productgallery">
-      <div class="responsive">
-        <div class="gallery">
-          <a href="product.php">
-            <!-- Original image below sourced for educational purposes: http://christmastreesdelivered.co.uk -->
-            <img class="center" src="../../media/products/firGen.jpg"></img>
-            <div class="desc">
-              <span class="productname"> Genuine Fir Tree</span> <!-- name -->
-              <hr>
-              <span>$200 - $350</span> <!-- price -->
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: https://www.allinone.co.uk -->
-          <img class="center" src="../../media/products/firArt.jpg"></img>
-          <div class="desc">
-            <span class="productname">Artificial Fir Tree</span> <!-- name -->
-            <hr>
-            <span>$200 - $350</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: https://www.xmastree.com.au -->
-          <img class="center" src="../../media/products/pineGen.jpg"></img>
-          <div class="desc">
-            <span class="productname">Genuine Pine Tree</span> <!-- name -->
-            <hr>
-            <span>$200 - $350</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: http://ii.christmastreeshops.com -->
-          <img class="center" src="../../media/products/pineArt.jpg"></img>
-          <div class="desc">
-            <span class="productname">Artificial Pine Tree</span> <!-- name -->
-            <hr>
-            <span>$200 - $350</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: https://www.costumebox.com.au -->
-          <img class="center" src="../../media/products/christmasCosplay.jpg"></img>
-          <div class="desc">
-            <span class="productname">Tree Costume</span> <!-- name -->
-            <hr>
-            <span>$1000</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: http://www.ithinkdifferently.me -->
-          <img class="center" src="../../media/products/lights.jpg"></img>
-          <div class="desc">
-            <span class="productname">Christmas Lights 10m</span> <!-- name -->
-            <hr>
-
-            <span>$200 - $350</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: https://www.snapdeal.com -->
-          <img class="center" src="../../media/products/ornaments.jpg"></img>
-          <div class="desc">
-            <span class="productname">Christmas Ornaments</span> <!-- name -->
-            <hr>
-            <span>$25 - $50</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: https://shop.siamusic.net -->
-          <img class="center" src="../../media/products/treetopper.jpg" ></img>
-          <div class="desc">
-            <span class="productname">Tree Topper</span> <!-- name -->
-            <hr>
-            <span>$35</span> <!-- price -->
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div class="gallery">
-          <!-- Original image below sourced for educational purposes: https://target.scene7.comused -->
-          <img class="center" src="../../media/products/wreath.jpg"></img>
-          <div class="desc">
-            <span class="productname">Wreath</span> <!-- name -->
-            <hr>
-            <span>$70</span> <!-- price -->
-          </div>
-        </div>
-      </div>
+<?php
+      foreach ($records as $value1)
+      {
+     echo   '<div class="responsive">';
+     echo     '<div class="gallery">';
+     echo       '<a href="product.php?id=' . $value1[0] . '">';
+     echo         "<!-- Original image below sourced for educational purposes: http://christmastreesdelivered.co.uk -->";
+     echo         '<img class="center" src="'. $value1[4].'"></img>';
+     echo         '<div class="desc">';
+     echo            '<span class="productname">'. $value1[1]."</span> <!-- name -->";
+     echo           "<hr>";
+     echo           "<span>$".$value1[3]."</span> <!-- price -->";
+     echo         "</div>";
+     echo       "</a>";
+     echo     "</div>";
+     echo   "</div>";
+   }
+     ?>
     </div>
   </main>
 

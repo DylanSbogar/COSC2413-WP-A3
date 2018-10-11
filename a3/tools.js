@@ -1,6 +1,8 @@
 function incrementValue() {
   var quantityvalue = document.getElementById('quantitynumber').value;
     document.getElementById('quantitynumber').value = ++quantityvalue;
+
+    document.getElementById('price').innerHTML = "$" + document.getElementById('quantitynumber').value * document.getElementById('productprice').value;
 }
 
 function decrementValue() {
@@ -8,6 +10,9 @@ function decrementValue() {
   {
     var quantityvalue = document.getElementById('quantitynumber').value;
     document.getElementById('quantitynumber').value = --quantityvalue;
+
+    document.getElementById('price').innerHTML = "$" + document.getElementById('quantitynumber').value * document.getElementById('productprice').value;
+
   }
 }
 

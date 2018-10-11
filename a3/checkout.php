@@ -22,143 +22,141 @@
 
   <main>
     <div>
-      <!-- takes the products.txt file and puts it into the 2d array records[][]-->
-      <?php
-      $file = fopen('products.txt','r');
-      while ($line = fgets($file))
-      {
-        $records[] = explode(",", $line);
-      }
-      fclose($file);
-      ?>
+
 
       <!-- PLACEHOLDER CART, MUST BE UPDATED WITH FUNCTIONAL CART -->
-    <div class="shopping-cart">
-     <!-- Title -->
-     <div class="title">
-       Order Summary
-     </div>
+      <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Order Summary
+        </div>
 
-     <!-- Product #1 -->
-     <div class="item">
-       <div class="buttons">
-         <span class="delete-btn"></span>
-         <span class="like-btn"></span>
-       </div>
+        <!-- Product #1 -->
+        <?php
+        for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
+        {
+          echo '<div class="item">';
 
-       <div class="image">
-         <img src="item-1.png" alt="" />
-       </div>
+          echo  '<div class="image">';
+          echo    '<img src="item-1.png" alt="" />';
+          echo  '</div>';
 
-       <div class="description">
-         <span>Common Projects</span>
-         <span>Bball High</span>
-         <span>White</span>
-       </div>
+          echo  '<div class="description">';
+          echo    '<span>'.$_SESSION['$cart'][$x][0];
+          echo  '</span>';
+          echo    '<span>'.$_SESSION['$cart'][$x][2];
+          echo '</span>';
+          echo  '</div>';
 
-       <div class="quantity">
-         <button class="plus-btn" type="button" name="button">
-           <img src="plus.svg" alt="" />
-         </button>
-         <input type="text" name="name" value="1">
-         <button class="minus-btn" type="button" name="button">
-           <img src="minus.svg" alt="" />
-         </button>
-       </div>
+          echo  '<div class="quantity">';
+          echo    '<script src="tools.js"></script>';
+          // echo '<form>'
+          // echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
+          // echo      '-';
+          // echo   ' </button>';
+          echo    '<input id="quantitynumber" type="number" name="qty" value="'.$_SESSION['$cart'][$x][1].'" readonly>';
+          // echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
+          // echo      '+';
+          // echo    '</button>';
+          echo  '</div>';
+          echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';
+          echo      '</div>';
 
-       <div class="total-price">$549</div>
-     </div>
-
-     <!-- Product #2 -->
-     <div class="item">
-       <div class="buttons">
-         <span class="delete-btn"></span>
-         <span class="like-btn"></span>
-       </div>
-
-       <div class="image">
-         <img src="item-2.png" alt=""/>
-       </div>
-
-       <div class="description">
-         <span>Maison Margiela</span>
-         <span>Future Sneakers</span>
-         <span>White</span>
-       </div>
-
-       <div class="quantity">
-         <button class="plus-btn" type="button" name="button">
-           <img src="plus.svg" alt="" />
-         </button>
-         <input type="text" name="name" value="1">
-         <button class="minus-btn" type="button" name="button">
-           <img src="minus.svg" alt="" />
-         </button>
-       </div>
-
-       <div class="total-price">$870</div>
-     </div>
-
-     <!-- Product #3 -->
-     <div class="item">
-       <div class="buttons">
-         <span class="delete-btn"></span>
-         <span class="like-btn"></span>
-       </div>
-
-       <div class="image">
-         <img src="item-3.png" alt="" />
-       </div>
-
-       <div class="description">
-         <span>Our Legacy</span>
-         <span>Brushed Scarf</span>
-         <span>Brown</span>
-       </div>
-
-       <div class="quantity">
-         <button class="plus-btn" type="button" name="button">
-           <img src="plus.svg" alt="" />
-         </button>
-         <input type="text" name="name" value="1">
-         <button class="minus-btn" type="button" name="button">
-           <img src="minus.svg" alt="" />
-         </button>
-       </div>
-
-       <div class="total-price">$349</div>
-     </div>
-   </div>
+          //TODO in here
+          //fix quantity, save it to the array
+          //fix the quantity increment buttons
+          //neaten up design
+        }
+        ?>
+      </div>
     </div>
 
     <div id="totals" class="center">
-      <span>Subtotal: $xxx.xx</span> <br>
-      <span>+ shipping: $xx.xx</span> <br>
-      <span>Total: $xxx.xx</span> <br>
+      <?php
+      for ($v = 0; $v < $_SESSION['$cartquantity'];$v++)
+      {
+        $total = $total + ($_SESSION['$cart'][$v][3] * $_SESSION['$cart'][$v][1]);
+      }
+
+      // defining variables
+      $fname = $lname = $email = $address = $telno = $creditcard = $expirydate = "";
+
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $fname = test_input($_POST["fname"]);
+        $lname = test_input($_POST["lname"]);
+        $email = test_input($_POST["email"]);
+        $address = test_input($_POST["address"]);
+        $telno = test_input($_POST["telno"]);
+        $creditcard = test_input($_POST["creditcard"]);
+        $expirydate = test_input($_POST["expirydate"]);
+      }
+
+      function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+      }
+      ?>
+
+      <span>Total: $<?php echo $total?></span> <br>
     </div>
 
     <div id="orderinfo" >
-    <form method="post">
-      <label>Full Name</label>
-      <span id="inputTitle"Last Name</span><br>
-      <input required type="text" name="fname" placeholder="First Name"></input>
-      <input required type="text" name="lname" placeholder="Last Name"></input> <br>
-      <label>Email Address</label>
-      <input required type="email" name="$email" placeholder="Email Address"></input><br>
-      <label>Phone Number</label>
-      <input required type ="tel" name="telno" placeholder="Phone Number"></input><br>
-      <label>Credit Card Number</label>
-      <input required type="number" name="creditcard" placeholder="Credit Card"></input><br>
-      <label>Expiry Date</label>
-      <input required name="expirydate" placeholder="Expiry Date"</input><br>
-       <input type="submit" name="submit" value="Purchase" />
-    </form>
-  </div>
-  </main>
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-  <?php
-  include 'include/footer.php';
-  ?>
+        <label>Full Name</label>
+        <span id="inputTitle"Last Name</span><br>
+          <input type="text" name="fname" placeholder="First Name"></input>
+          <input type="text" name="lname" placeholder="Last Name"></input> <br>
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Email Address"></input><br>
+          <label>Address</label>
+          <input type="text" name="address" placeholder="Address"</input><br>
+          <label>Phone Number</label>
+          <input type ="text" name="telno" placeholder="Phone Number" value="<?php echo $telno;?>" pattern="^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$"></input><br>
+          <span class="error"><?php echo $telnoError;?></span>
+          <label>Credit Card Number</label>
+          <input type="number" name="creditcard" placeholder="Credit Card" ></input><br>
+          <!-- pattern="^4[0-9]{12}(?:[0-9]{3})?$" -->
+          <label>Expiry Date</label>
+          <input name="expirydate" placeholder="Expiry Date"</input><br>
+          <input type="hidden" name="total" value="<?php $total ?>"</input><br>
 
-</body>
-</html>
+          <input type="submit" name="submit" value="submit">
+
+          <p id="demo"></p>
+
+          <script>
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d;
+          </script>
+        </form>
+
+        <?php
+        echo "<h2>Your Input:</h2>";
+        echo $fname;
+        echo "<br>";
+        echo $lname;
+        echo "<br>";
+        echo $email;
+        echo "<br>";
+        echo $address;
+        echo "<br>";
+        echo $telno;
+        echo "<br>";
+        echo $creditcard;
+        echo "<br>";
+        echo $expirydate;
+        ?>
+      </div>
+    </main>
+
+
+
+    <?php
+    include 'include/footer.php';
+    ?>
+
+  </body>
+  </html>

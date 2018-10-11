@@ -27,6 +27,8 @@
    {
      $records[] = explode(",", $line);
    }
+
+
    fclose($file);
 
 if (empty($_SESSION['cart']))
@@ -83,8 +85,8 @@ foreach($records as $v) {
             <input id="quantitynumber" type="number" name="qty" value="0" readonly>
             <input type="button" value="+" onclick='incrementValue()' name="increase"></input>
           </div>
-          <span id="price"><p>$<?php echo "$price"; ?></p></span>
-          <input type="hidden" name="price" value="<?php echo "$price"; ?>">
+          <span><p id="price"><?php echo "$".$price."ea"; ?></p></span>
+          <input id="productprice" type="hidden" name="price" value="<?php echo "$price"; ?>">
           <div id="invalidwarning">Please enter a valid quantity!</div>
           <!-- TESTING LINE BELOW-->
           <input class="center" id="purchasebutton" type="submit" value="Purchase" name="submit"></input>

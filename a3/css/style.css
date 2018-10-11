@@ -379,6 +379,7 @@ hr {
 
 #quantity {
   margin-bottom: 3px;
+  margin-left: 30px;
 }
 
 #invalidwarning {
@@ -509,7 +510,7 @@ Let’s add some basic style to  product name and description.
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0; 
+    margin: 0;
 }
 
 button[class*=btn] {

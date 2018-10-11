@@ -27,6 +27,7 @@
       $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][1] = $_POST["qty"];
       $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][2] = $_POST["option"];
       $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][3] = $_POST["price"];
+      $_SESSION['$cart'][(int)$_SESSION['$cartquantity']][4] = $_POST["id"];
       $_SESSION['$cartquantity']++;
 
     }
@@ -55,9 +56,6 @@
       for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
       {
         echo '<div class="item">';
-        echo  '<div class="buttons">';
-        echo    '<span class="delete-btn">Remove</span>';
-        echo  '</div>';
 
         echo  '<div class="image">';
         echo    '<img src="item-1.png" alt="" />';
@@ -72,13 +70,14 @@
 
         echo  '<div class="quantity">';
         echo    '<script src="tools.js"></script>';
-        echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
-        echo      '-';
-        echo   ' </button>';
+        // echo '<form>'
+        // echo    '<button class="minus-btn" type="button" name="decrease" onclick="decrementValue()">';
+        // echo      '-';
+        // echo   ' </button>';
         echo    '<input id="quantitynumber" type="number" name="qty" value="'.$_SESSION['$cart'][$x][1].'" readonly>';
-        echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
-        echo      '+';
-        echo    '</button>';
+        // echo    '<button class="plus-btn" type="button" name="increase" onclick="incrementValue()">';
+        // echo      '+';
+        // echo    '</button>';
         echo  '</div>';
         echo  '<div class="total-price">$'.$_SESSION['$cart'][$x][3].'</div>';
         echo      '</div>';

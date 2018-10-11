@@ -20,17 +20,18 @@
   include 'include/nav.php';
    ?>
 
+   <!-- takes the products.txt file and puts it into the 2d array records[][]-->
    <?php
    $file = fopen('products.txt','r');
-   fgets($file); //skips the title row
-   while ($line = fgets($file))
+   fgets($file);
+   while (!feof($file))
    {
-     $records[] = explode(",", $line);
+     $records[] = fgetcsv($file);
+     echo $records[9];
    }
    fclose($file);
-   ?>
 
-   <?php
+
    if (isset($_POST['cancel'])) {
      session_destroy();
    }
@@ -38,7 +39,6 @@
 
   <main>
     <div id="productgallery">
-
 <?php
       foreach ($records as $value1)
       {

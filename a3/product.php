@@ -21,15 +21,6 @@
    ?>
 
    <?php
-   $file = fopen('products.txt','r');
-   fgets($file); //skips the title row
-   while ($line = fgets($file))
-   {
-     $records[] = explode(",", $line);
-   }
-
-
-   fclose($file);
 
 if (empty($_SESSION['cart']))
 {

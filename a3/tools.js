@@ -1,8 +1,8 @@
 function incrementValue() {
   var quantityvalue = document.getElementById('quantitynumber').value;
-    document.getElementById('quantitynumber').value = ++quantityvalue;
+  document.getElementById('quantitynumber').value = ++quantityvalue;
 
-    document.getElementById('price').innerHTML = "$" + document.getElementById('quantitynumber').value * document.getElementById('productprice').value;
+  document.getElementById('price').innerHTML = "$" + document.getElementById('quantitynumber').value * document.getElementById('productprice').value;
 }
 
 function decrementValue() {
@@ -26,10 +26,10 @@ function submitCheck() {
 }
 
 function toggleDebugMode() {
-    var x = document.getElementById("debugScript");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+  var x = document.getElementById("debugScript");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }

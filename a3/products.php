@@ -22,16 +22,6 @@
 
    <!-- takes the products.txt file and puts it into the 2d array records[][]-->
    <?php
-   $file = fopen('products.txt','r');
-   fgets($file);
-   while (!feof($file))
-   {
-     $records[] = fgetcsv($file);
-     echo $records[9];
-   }
-   fclose($file);
-
-
    if (isset($_POST['cancel'])) {
      session_destroy();
    }
@@ -45,7 +35,6 @@
      echo   '<div class="responsive">';
      echo     '<div class="gallery">';
      echo       '<a href="product.php?id=' . $value1[0] . '">';
-     echo         "<!-- Original image below sourced for educational purposes: http://christmastreesdelivered.co.uk -->";
      echo         '<img class="center" src="'. $value1[4].'"></img>';
      echo         '<div class="desc">';
      echo            '<span class="productname">'. $value1[1]."</span> <!-- name -->";

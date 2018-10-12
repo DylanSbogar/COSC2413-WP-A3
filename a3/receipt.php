@@ -70,6 +70,14 @@ include 'include/header.php';
 }
 ?>
 
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+
 </main>
 
 <?php

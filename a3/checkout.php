@@ -149,14 +149,6 @@
           <input type="hidden" name="total" value="<?php $total ?>"</input><br>
           <input type="submit" name="submit" value="submit">
 
-          <p id="demo"></p>
-
-          <script>
-          var d = new Date();
-          document.getElementById("demo").innerHTML = d;
-          </script>
-        </form>
-
         <?php
         echo "<h2>Your Input:</h2>";
         echo $fname;

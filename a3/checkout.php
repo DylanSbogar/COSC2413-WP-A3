@@ -127,6 +127,7 @@
             $_SESSION['total'] = $total;
             date_default_timezone_set("Australia/Melbourne");
             $_SESSION['date'] = date("Y-m-d h:i:sa");
+            $date =   $_SESSION['date'];
 
 
             $handle = fopen("orders.txt","a");
@@ -136,7 +137,7 @@
               $quantity = $q[1];
               $unitprice = $q[3];
               $purchase = $q[2]." ".$q[0];
-              $line = "\n$purchase\t$_SESSION['date']\t$fname\t$lname\t$address\t$telno\t$email\t$id\t$oid\t$quantity\t$unitprice\t$subtotal";
+              $line = "\n$purchase\t$date\t$fname\t$lname\t$address\t$telno\t$email\t$id\t$oid\t$quantity\t$unitprice\t$subtotal";
               fputs($handle, $line);
             }
             fclose($handle);
@@ -184,8 +185,6 @@
           <input type="submit" name="submit" value="submit">
         </form>
       </div>
-
-
 
     </main>
 

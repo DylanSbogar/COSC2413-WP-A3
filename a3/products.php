@@ -24,6 +24,8 @@
    <?php
    if (isset($_POST['cancel'])) {
      session_destroy();
+     session_start();
+     $_SESSION['$cartquantity'] = 0;
    }
    ?>
 

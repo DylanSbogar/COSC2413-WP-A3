@@ -7,12 +7,15 @@
     <?php
 
 
+    if (isset($_SESSION['$cartquantity']))
+    {
+    // Instructions if $_POST['value'] exist
 
     for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
     {
       echo '<div class="item">';
       echo  '<div class="image">';
-      echo    '<img src="'.$records[(int)$_SESSION['$cart'][$x][4]-1][4].'" alt="product image" /></div>';
+      echo    '<img width="65px" src="'.$records[(int)$_SESSION['$cart'][$x][4]-1][4].'" alt="product image" /></div>';
       echo  '<div class="description">';
       echo    '<span>'.$_SESSION['$cart'][$x][0].'</span>';
       echo    '<span>'.$_SESSION['$cart'][$x][2].'</span>';
@@ -24,9 +27,8 @@
       echo  '</div>';
 
     }
-
-
-    if ($x == 0)
+}
+    if ($_SESSION['$cartquantity'] == 0)
     {
       echo '<br><div class="center" >cart is empty</div>';
     }

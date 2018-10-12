@@ -31,16 +31,24 @@
       $_SESSION['$cartquantity']++;
 
     }
+    $total = 0;
+    for ($v = 0; $v < $_SESSION['$cartquantity'];$v++)
+    {
+      $total = $total + ($_SESSION['$cart'][$v][3] * $_SESSION['$cart'][$v][1]);
+    }
     ?>
 
-<?php include 'include/cart.php' ?>
+    <?php include 'include/cart.php' ?>
 
-      <form action="products.php" method="post">
-        <input  type="submit" name="cancel" value="cancel" id="cancelbutton"></input>
+      <span><h2>Total: $<?php echo $total?></h2></span> <br>
+
+    <div class="center">
+      <form class="cartform" action="products.php" method="post">
+        <input class="button1" id="cancel" type="submit" name="cancel" value="Cancel Order" id="cancelbutton"></input>
       </form>
 
-      <form action="checkout.php" method="post">
-        <input  type="submit" name="checkout" value="Proceed to Checkout" id="checkoutbutton"></input>
+      <form class="cartform" action="checkout.php" method="post">
+        <input class="button1" type="submit" name="checkout" <?php if ($_SESSION['$cartquantity'] == '0'){ ?> disabled <?php   } ?> value="Proceed to Checkout" id="checkoutbutton"></input>
       </form>
     </div>
   </main>

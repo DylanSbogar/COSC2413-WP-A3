@@ -137,22 +137,35 @@ footer {
   font-size: 12px;
   text-align: center;
   clear: both;
-  magin-top: 50px;
+  margin-top: 50px;
 }
 
-#purchasebutton, #loginbutton {
+.button1 {
   background-color: #77DD77;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom:20px;
   width: auto;
 }
 
-#purchasebutton:hover, #loginbutton:hover{
+#cancel {
+  background-color: #ff6961;
+  float: left;
+  width: 40%;
+  /* margin-left: 100px; */
+}
+
+#checkoutbutton {
+  float: right;
+  width: 40%;
+  /* margin-right: 100px; */
+}
+
+.button1:hover{
   background-color: #65BF65;
   margin: 0 auto;
   cursor: pointer;
@@ -306,7 +319,7 @@ div.gallery:hover {
 
 .infobox {
   width: 100%;
-  height: 400px;
+  height: 650px;
   background-color: #e6efe1;
   padding:10px;
 }
@@ -382,6 +395,11 @@ hr {
   margin-left: 30px;
 }
 
+#descrip {
+
+
+}
+
 #invalidwarning {
   visibility: hidden;
   text-align:center;
@@ -411,7 +429,6 @@ body {
 
 .shopping-cart {
   width: 750px;
-  height: 423px;
   margin: 80px auto;
   background: #FFFFFF;
   box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
@@ -433,9 +450,6 @@ body {
   padding: 20px 30px;
   height: 120px;
   display: flex;
-}
-
-.item:nth-child(3) {
   border-top:  1px solid #E1E8EE;
   border-bottom:  1px solid #E1E8EE;
 }
@@ -443,27 +457,6 @@ body {
   position: relative;
   padding-top: 30px;
   margin-right: 60px;
-}
-.delete-btn,
-.like-btn {
-  display: inline-block;
-  Cursor: pointer;
-}
-.delete-btn {
-  width: 18px;
-  height: 17px;
-  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
-}
-
-.like-btn {
-  position: absolute;
-  top: 9px;
-  left: 15px;
-  background: url('twitter-heart.png');
-  width: 60px;
-  height: 60px;
-  background-size: 2900%;
-  background-repeat: no-repeat;
 }
 
 .image {
@@ -493,7 +486,7 @@ body {
 }
 
 .quantity {
-  padding-top: 20px;
+  padding-top: 27px;
   margin-right: 60px;
   margin-left: 60px;
 }
@@ -515,7 +508,7 @@ input::-webkit-inner-spin-button {
 
 .total-price {
   /* width: 83px; */
-  /* padding-top: 27px; */
+  padding-top: 27px;
   text-align: center;
   font-size: 16px;
   color: #43484D;
@@ -528,7 +521,7 @@ input::-webkit-inner-spin-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 35%;
   padding:25px;
   background-color:#efefef;
 }
@@ -555,6 +548,7 @@ input::-webkit-inner-spin-button {
     box-sizing: border-box;
 }
 
+
 .error {
   float: right;
   color: red;
@@ -573,14 +567,51 @@ border-collapse: collapse;
 width: 100%;
 }
 td, th {
-    border: 1px solid #dddddd;
+
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #F7F7F7;
 }
 
 .totalprice {
   font-size: 2em;
+  background-color: #77dd77;
+  padding: 20px 20px;
+}
+
+.cartform {
+  display: inline;
+}
+
+#checkouttable{
+background-color: 	#F7F7F7;
+border-spacing: 50px 0;
+border-style: none;
+line-height: 2em;
+}
+
+.receiptbuyerdetails {
+  margin-top: 20px;
+background-color: #77dd77;
+padding: 20px 0px 50px 20px;
+text-align: left;
+line-height: 2em;
+}
+
+#billedto {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.receiptorderdetails {
+float: right;
+width: 40%;
+text-align: left;
+display: inline;
+height: 100%;
+}
+
+#visalogo {
 }

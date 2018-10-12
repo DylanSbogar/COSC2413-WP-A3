@@ -31,11 +31,15 @@ $id = $_GET['id'];
 
 foreach($records as $v) {
     if ($v[0] == $id) {
+      $doesntexist = 0;
         $name = $v[1];
         $desc = $v[2];
         $price = $v[3];
         $path = $v[4];
         break;
+    }
+    else {
+      $doesntexist = 1;
     }
 }
    ?>
@@ -52,6 +56,7 @@ foreach($records as $v) {
       <div id="information">
         <form name="order" action ="cart.php" onsubmit="return submitCheck()" method="post"> <!-- removed action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product"  -->
           <h1 name="name"><?php echo "$name"; ?></h1>
+          <p class="center" id="descrip"><?php echo $desc; ?></p>
           <input type="hidden" name="name" value="<?php echo "$name"; ?>">
           <input type="hidden" name="id" value="<?php echo "$id"; ?>">
           <div class="buttonsizes center">
@@ -80,7 +85,7 @@ foreach($records as $v) {
           <input id="productprice" type="hidden" name="price" value="<?php echo "$price"; ?>">
           <div id="invalidwarning">Please enter a valid quantity!</div>
           <!-- TESTING LINE BELOW-->
-          <input class="center" id="purchasebutton" type="submit" value="Purchase" name="submit"></input>
+          <input class="center button1" <?php if ($doesntexist == 1){ ?> disabled <?php   } ?> id="purchasebutton" type="submit" value="Purchase" name="submit"></input>
         </form>
       </div>
     </div>

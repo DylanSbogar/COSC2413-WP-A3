@@ -33,3 +33,17 @@ function toggleDebugMode() {
     x.style.display = "none";
   }
 }
+
+function checkVISA() {
+    var x = document.getElementById("test").value;
+    var visalogo = document.getElementById("visalogo");
+    var re = new RegExp("^4[0-9]{12}(?:[0-9]{3})?$");
+    if(re.test(x)) {
+      visalogo.style.display = "inline";
+      // alert("valid");
+    } else {
+      visalogo.style.display = "none";
+      // alert("invalid");
+    }
+
+}

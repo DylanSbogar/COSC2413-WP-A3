@@ -1,10 +1,10 @@
 ID,TITLE,DESC,PRICE,IMAGEPATH
-01,Genuine Fir Tree, a large tree, 300, ../../media/products/firGen.jpg
-02,Artificial Fir Tree, a large tree, 200, ../../media/products/firArt.jpg
-03,Genuine Pine Tree, a large tree, 300, ../../media/products/pineGen.jpg
-04,Artificial Pine Tree, a large tree, 200, ../../media/products/pineArt.jpg
-05,Tree Costume, a large tree, 5000, ../../media/products/christmasCosplay.jpg
-06,Christmas Lights 10m, a large tree, 50, ../../media/products/lights.jpg
-07,Christmas Ornaments, a large tree, 10, ../../media/products/ornaments.jpg
-08,Tree Topper, a large tree, 50, ../../media/products/treetopper.jpg
-09,Wreath, a large tree, 40, ../../media/products/wreath.jpg
+01,Genuine Fir Tree, The perfect authentic tree from a forest, 300, ../../media/products/firGen.jpg
+02,Artificial Fir Tree, an easy to maintain tree, 200, ../../media/products/firArt.jpg
+03,Genuine Pine Tree, An almost perfect authentic tree from a forest, 300, ../../media/products/pineGen.jpg
+04,Artificial Pine Tree, an easy to maintain tree that is fake, 200, ../../media/products/pineArt.jpg
+05,Tree Costume, Unleash who you really are, 5000, ../../media/products/christmasCosplay.jpg
+06,Christmas Lights 10m, RGB up your festive holiday, 50, ../../media/products/lights.jpg
+07,Christmas Ornaments, spherical in shape as well as in spirit, 10, ../../media/products/ornaments.jpg
+08,Tree Topper, what else would you top a tree with, 50, ../../media/products/treetopper.jpg
+09,Wreath, fun to throw at people, 40, ../../media/products/wreath.jpg

@@ -12,47 +12,60 @@
 
 <body>
 
-<?php
-include 'include/header.php';
-?>
-
-
-<main>
-<div>
-<?php echo $_SESSION['date'] ?><br>
-<?php echo $_SESSION['fname'] ." ". $_SESSION['lname'] ?><br>
-<?php echo "Order Number #" . $_SESSION['oid'] ?><br>
-</div>
-
-<table class="center">
-  <tr>
-    <th>Product Name</th>
-    <th>Option</th>
-    <th>Quantity</th>
-    <th>Price (Unit)</th>
-    <th>Total Price</th>
-  </tr>
   <?php
-  for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
-  {
-    echo "<tr>";
-    echo  "<td>".$_SESSION['$cart'][$x][0]."</td>";
-    echo  "<td>".$_SESSION['$cart'][$x][2]."</td>";
-    echo  "<td>".$_SESSION['$cart'][$x][1]."</td>";
-    echo  "<td>".$_SESSION['$cart'][$x][3]."</td>";
-    echo  "<td>".($_SESSION['$cart'][$x][3]*$_SESSION['$cart'][$x][1])."</td>";
-    echo "</tr>";
-  }
+  include 'include/header.php';
   ?>
-</table>
-<div class="center totalprice">
-<?php echo "Total Price: $" .$_SESSION['total'].".00" ?>
-</div>
-</main>
 
-<?php
- include 'include/footer.php';
-?>
+
+  <main>
+    <div class="center receiptbuyerdetails">
+      <div class="receiptorderdetails">
+        <span id="billedto">Order details:</span> <br>
+        <?php echo "Time of purchase:<br>".$_SESSION['date'] ?><br>
+      </div>
+      <span id="billedto">Billed to:</span> <br>
+
+      <?php echo $_SESSION['fname'] ." ". $_SESSION['lname'] ?><br>
+      <?php echo $_SESSION['address'] ?><br>
+      <?php echo "Telephone Number: " .$_SESSION['telno'] ?><br>
+      <?php echo "Card Number: ".$_SESSION['creditcard'] ?><br>
+      <?php echo "Expiry Date: " .$_SESSION['expirydate'] ?><br>
+
+
+    </div>
+
+    <table id="checkouttable" class="center">
+      <tr>
+        <th>Product Name</th>
+        <th>Option</th>
+        <th>Quantity</th>
+        <th>Price (Unit)</th>
+        <th>Total Price</th>
+      </tr>
+      <?php
+      if (isset($_SESSION['$cartquantity']))
+      {
+        for ($x = 0; $x < $_SESSION['$cartquantity']; $x++)
+        {
+          echo "<tr>";
+          echo  "<td>".$_SESSION['$cart'][$x][0]."</td>";
+          echo  "<td>".$_SESSION['$cart'][$x][2]."</td>";
+          echo  "<td>".$_SESSION['$cart'][$x][1]."</td>";
+          echo  "<td>$".(int)$_SESSION['$cart'][$x][3]."</td>";
+          echo  "<td>$".($_SESSION['$cart'][$x][3]*$_SESSION['$cart'][$x][1])."</td>";
+          echo "</tr>";
+        }
+      }
+      ?>
+    </table>
+    <div class="center totalprice">
+      <?php echo "Total Price: $" .$_SESSION['total'].".00" ?>
+    </div>
+  </main>
+
+  <?php
+  include 'include/footer.php';
+  ?>
 
 </body>
 </html>

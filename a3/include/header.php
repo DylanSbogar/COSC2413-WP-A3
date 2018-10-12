@@ -3,7 +3,7 @@
 session_start();
    ?>
   <div>
-    <img src="../../media/ChristmasOnMain-logo.png" alt="Christmas On Main logo" class="center" href="index.php">
+    <a href="index.php"><img src="../../media/ChristmasOnMain-logo.png" alt="Christmas On Main logo" class="center"></a>
   </div>
 </header>
 

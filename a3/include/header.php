@@ -16,15 +16,4 @@ while (!feof($file))
 }
 array_pop($records); //adds one too many for some reason
 fclose($file);
-
-foreach($records as $v) {
-    if ($v[0] == $id) {
-        $name = $v[1];
-        $desc = $v[2];
-        $price = $v[3];
-        $path = $v[4];
-        $id = $v[0];
-        break;
-    }
-}
  ?>

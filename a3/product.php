@@ -22,11 +22,6 @@
 
    <?php
 
-if (empty($_SESSION['cart']))
-{
-  $_SESSION['cart'] = array();
-}
-
 $id = $_GET['id'];
 
 foreach($records as $v) {
